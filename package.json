@@ -1,8 +1,8 @@
 {
+  "homepage": "https://Akkuun.github.io/PortFolio_React_Duban",
   "name": "site_portfolio_github",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akkuun.github.io/PortFolio_React_Duban",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -14,11 +14,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predoploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predoploy": "npm run build",
-    "deploy": "gh-pages   -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
