@@ -6,15 +6,19 @@
 body{
     cursor: none;
 }
+html{
+    background-color: #130E16;
+    cursor: none;
+}
 .cursor-dot{
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
     background-color: white;
 
 }
 .cursor-outline{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border: 1px solid hsla(0, 0%, 100%, 0.37);
     transition: left 0.3s ease-out, top 0.3s ease-out;
     background-color: rgb(128, 128, 128, 0.1);

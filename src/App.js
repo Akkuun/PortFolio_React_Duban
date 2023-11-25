@@ -7,25 +7,44 @@ function App() {
         const cursorDot = document.querySelector("[data-cursor-dot]");
         const cursorOutline = document.querySelector("[data-cursor-outline]");
 
+        let prevX = 0;
+        let prevY = 0;
+        let prevTime = Date.now();
+        const currentTime = Date.now();
+
+
         const handleMouseMove = (e) => {
             const posX = e.clientX;
             const posY = e.clientY;
+            const currentTime = Date.now();
+
+            const distanceX = posX - prevX;
+            const distanceY = posY - prevY;
+            const deltaTime = currentTime - prevTime;
+
+            const speedX = Math.abs(distanceX) / deltaTime;
+            const speedY = Math.abs(distanceY) / deltaTime;
+
+            const sensitivity = 0.2; // Ajustez la sensibilité selon votre préférence
+
 
             if (cursorDot) {
-                // Décalage du mouvement avec un léger délai de 50 millisecondes
-                setTimeout(() => {
-                    cursorDot.style.left = `${posX}px`;
-                    cursorDot.style.top = `${posY}px`;
-                }, 50);
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
             }
 
             if (cursorOutline) {
-                // Décalage du mouvement avec un léger délai de 50 millisecondes
-                setTimeout(() => {
-                    cursorOutline.style.left = `${posX}px`;
-                    cursorOutline.style.top = `${posY}px`;
-                }, 50);
+                const adjustedPosX = posX + distanceX * speedX * sensitivity;
+                const adjustedPosY = posY + distanceY * speedY * sensitivity;
+
+                cursorOutline.style.left = `${adjustedPosX}px`;
+                cursorOutline.style.top = `${adjustedPosY}px`;
+
             }
+            prevX = posX;
+            prevY = posY;
+            prevTime = currentTime;
+
         };
 
         window.addEventListener("mousemove", handleMouseMove);
