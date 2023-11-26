@@ -3,6 +3,7 @@ import "../style/css/header-component-style.css";
 import {TypeAnimation} from "react-type-animation";
 import pic from "../style/picture/picture_about_me.PNG";
 import github from "../style/picture/github.png";
+import linkedin from "../style/picture/linkedin.png";
 const HeaderComponent = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -48,8 +49,8 @@ const HeaderComponent = () => {
 
             </div>
             <div id="social">
-                <img src={github} alt="github" id="github" height="50px" width="50px"/>
-
+                <img src={github} alt="github" id="github-logo" height="50px" width="50px"/>
+                <img src={linkedin} alt="github"  id="linkin-logo" height="50px" width="50px"/>
             </div>
 
 
