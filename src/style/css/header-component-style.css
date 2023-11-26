@@ -23,11 +23,12 @@
     color: #9F55FF;
     margin-bottom: 1%;
     font-family: Lexend;
+
 }
 
 #Mathis {
     color: white;
-    font-size: 7vh;
+    font-size: 9vh;
     display: inline;
     position: relative;
     font-family: Lexend;
@@ -69,4 +70,10 @@
 #section {
     border: dashed blue;
 
+}
+#social{
+    border: dashed purple;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
 }

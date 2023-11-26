@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import "../style/css/header-component-style.css";
-import { TypeAnimation } from "react-type-animation";
+import {TypeAnimation} from "react-type-animation";
 import pic from "../style/picture/picture_about_me.PNG";
+import github from "../style/picture/github.png";
 
 const HeaderComponent = () => {
     useEffect(() => {
@@ -38,14 +39,20 @@ const HeaderComponent = () => {
                         ]}
                         wrapper="span"
                         speed={50}
-                        style={{ fontSize: '1em', display: 'inline-block' }}
+                        style={{fontSize: '1em', display: 'inline-block'}}
                         repeat={Infinity}
                     />
                 </h1>
                 <div id="picture_about_me">
-                    <img src={pic} className={"layer"} alt="pic" id="pic" height="80%" width="80%" data-speed="2" />
+                    <img src={pic} className={"layer"} alt="pic" id="pic" height="80%" width="80%" data-speed="2"/>
                 </div>
+
             </div>
+            <div id="social">
+                <img src={"https://icons8.com/icon/12598/github"} alt="github" id="github" height="50px" width="50px"/>
+            </div>
+
+
         </div>
     );
 };
