@@ -6,14 +6,16 @@ import github from "../style/picture/github.png";
 import linkedin from "../style/picture/linkedin.png";
 import github_hover from "../style/picture/githubHover.png";
 import linkedin_hover from "../style/picture/linkedinHover.png";
+import mail from "../style/picture/mail.png";
+import mailHover from "../style/picture/mailHover.png";
 
 const HeaderComponent = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
             document.querySelectorAll('.layer').forEach(layer => {
                 const speed = layer.getAttribute('data-speed');
-                const x = (window.innerWidth - e.pageX * speed) / 120;
-                const y = (window.innerHeight - e.pageY * speed) / 120;
+                const x = (window.innerWidth - e.pageX * speed) / 50;
+                const y = (window.innerHeight - e.pageY * speed) / 50;
                 layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
             });
         };
@@ -27,7 +29,7 @@ const HeaderComponent = () => {
 
     const [isGithubHovered, setIsGithubHovered] = useState(true);
     const [isLinkedinHovered, setIsLinkedinHovered] = useState(true);
-
+    const [isMailHovered, setIsMailHovered] = useState(true);
     const handleGithubHover = () => {
         setIsGithubHovered(true);
     };
@@ -40,6 +42,12 @@ const HeaderComponent = () => {
     }
     const handleLinkedinLeave = () => {
         setIsLinkedinHovered(false);
+    }
+    const handleMailHover = () => {
+        setIsMailHovered(true);
+    }
+    const handleMailLeave = () => {
+        setIsMailHovered(false);
     }
 
     return (
@@ -76,6 +84,10 @@ const HeaderComponent = () => {
                 <a href={"https://www.linkedin.com/in/mathis-duban-b15957236/"} target="_blank">
                     <img src={isLinkedinHovered ? linkedin : linkedin_hover} onMouseEnter={handleLinkedinLeave}
                          onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
+                </a>
+                <a href={"mailto:mathisduban.pro@gmail.fr"} target="_blank">
+                    <img src={isMailHovered? mail : mailHover} onMouseEnter={handleMailLeave}
+                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
                 </a>
             </div>
 
