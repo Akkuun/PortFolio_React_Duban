@@ -1,13 +1,13 @@
 import React from "react";
 
-
-import ProjectComponent from "../component/ProjectComponent";
 import HeaderComponent from "../component/HeaderComponent";
 
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Lea from "../component/Lea";
+import ProjectComponent from "../component/ProjectComponent";
 
 
 const PageMain = () => {
@@ -18,5 +18,12 @@ const PageMain = () => {
         </div>
     );
 };
+
+
+const pageMain = () => {
+    return(
+
+        <Lea/>  )
+}
 
 export default PageMain;

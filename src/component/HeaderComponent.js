@@ -1,6 +1,6 @@
 import React from 'react';
 import "..//style//header-component-style.css";
-import "@fontsource/lexend"; // Defaults to weight 400
+
 
 const HeaderComponent = () => {
 
