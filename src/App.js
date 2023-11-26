@@ -55,12 +55,15 @@ function App() {
     }, []); // Empty dependency array ensures this runs only once after initial render
 
     return (
+
         <div className="App">
             <body>
             <div className="cursor-dot" data-cursor-dot></div>
             <div className="cursor-outline" data-cursor-outline></div>
             </body>
+
             <PageMain />
+
         </div>
     );
 }
