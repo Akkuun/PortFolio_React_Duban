@@ -7,9 +7,39 @@
     cursor: None;
     border: dashed red;
     height: 100vh;
-    background-color: brown;
+    background-color: transparent;
+
 }
 
+.Name{
+    font-family: Lexend;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 7%;
+
+}
+
+#Hi{
+    color:#9F55FF;
+    margin-bottom: 1px;
+}
+
+#Mathis{ color: white;
+    font-size: 7vh;
+    display: inline;
+   position: relative;
+}
+#Mathis::after{
+    content: ''; /* Ajout d'un contenu pour l'élément ::after */
+    position: absolute; /* Position absolue pour placer la barre de soulignement */
+    bottom: -4px; /* Ajustement pour positionner la barre de soulignement au-dessous du texte */
+    left: 0; /* Alignement à gauche */
+    width: 100%; /* Barre de soulignement prenant toute la largeur du texte */
+    height: 4px; /* Épaisseur du soulignement */
+    background-color: #9F55FF; /* Couleur de la barre de soulignement */
+    border-radius: 10px; /* Arrondir les coins du soulignement */
+    box-shadow: 0px 8px 15px rgba(159, 85, 255, 1);
+}
 
 .swiper-container{
     height: 100vh;

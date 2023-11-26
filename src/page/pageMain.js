@@ -13,8 +13,8 @@ import ProjectComponent from "../component/ProjectComponent";
 const PageMain = () => {
     return (
         <div>
-       <ProjectComponent />
         <HeaderComponent />
+            <ProjectComponent />
         </div>
     );
 };
