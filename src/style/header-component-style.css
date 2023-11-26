@@ -1,6 +1,6 @@
 @font-face {
     font-family:'Lexend';
-    src: url("../font/Lexend-Regular.ttf") format('truetype');
+    src: url("../font/Lexend/Lexend-Regular.ttf") format('truetype');
 }
 
 .header-component{
@@ -22,12 +22,15 @@
 #Hi{
     color:#9F55FF;
     margin-bottom: 1%;
+    font-family: NunitoSans;
 }
 
-#Mathis{ color: white;
+#Mathis{
+    color: white;
     font-size: 7vh;
     display: inline;
    position: relative;
+    font-family: Lexend;
 }
 #Mathis::after{
     content: ''; /* Ajout d'un contenu pour l'élément ::after */
@@ -37,7 +40,7 @@
     width: 100%; /* Barre de soulignement prenant toute la largeur du texte */
     height: 8%; /* Épaisseur du soulignement */
     background-color: #9F55FF; /* Couleur de la barre de soulignement */
-    border-radius: 2%px; /* Arrondir les coins du soulignement */
+    border-radius: 2px; /* Arrondir les coins du soulignement */
     box-shadow: 0px 8px 15px rgba(159, 85, 255, 1);
 }
 
@@ -49,4 +52,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#Texte_animation{
+
+    color: grey;
 }
