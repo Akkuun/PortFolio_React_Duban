@@ -1,0 +1,38 @@
+.App{
+    text-align: center;
+    background-color: #130E16;
+    height: auto;
+}
+body{
+    cursor: none;
+}
+html{
+    background-color: #130E16;
+    cursor: none;
+}
+.cursor-dot{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+
+}
+.cursor-outline{
+    width: 35px;
+    height: 35px;
+    border: 1px solid hsla(0, 0%, 100%, 0.37);
+    transition: left 0.3s ease-out, top 0.3s ease-out;
+    background-color: rgb(128, 128, 128, 0.1);
+
+}
+
+.cursor-dot,.cursor-outline{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+
+}
