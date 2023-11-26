@@ -1,15 +1,22 @@
 import React from "react";
-import Lea from "../component/Lea";
+
+
+import ProjectComponent from "../component/ProjectComponent";
 import HeaderComponent from "../component/HeaderComponent";
 
-const pageMain = () => {
-    return(
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+const PageMain = () => {
+    return (
         <div>
-        <HeaderComponent/>
-        <Lea/>
+       <ProjectComponent />
+        <HeaderComponent />
         </div>
+    );
+};
 
-    )
-}
-
-export default pageMain;
+export default PageMain;
