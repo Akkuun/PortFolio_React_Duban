@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
-import "../style/project-component.css";
+import "../style/css/project-component.css";
 
 const ProjectComponent = ({Valeur_Parametre1,Valeur_Parametre2}) => {
 

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style/App.css';
+import './style/css/App.css';
 import PageMain from "./page/pageMain";
 
 function App() {
