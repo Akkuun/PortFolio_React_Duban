@@ -79,15 +79,15 @@ const HeaderComponent = () => {
             <div id="social">
                 <a href={"https://github.com/Akkuun"} target="_blank">
                     <img src={isGithubHovered ? github : github_hover} onMouseEnter={handleGithubLeave}
-                         onMouseLeave={handleGithubHover} alt="github" id="github-logo" height="50px" width="50px"/>
+                         onMouseLeave={handleGithubHover} alt="github" id="github-logo" height="25px" width="25px"/>
                 </a>
                 <a href={"https://www.linkedin.com/in/mathis-duban-b15957236/"} target="_blank">
                     <img src={isLinkedinHovered ? linkedin : linkedin_hover} onMouseEnter={handleLinkedinLeave}
-                         onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
+                         onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="25px" width="25px"/>
                 </a>
                 <a href={"mailto:mathisduban.pro@gmail.fr"} target="_blank">
                     <img src={isMailHovered? mail : mailHover} onMouseEnter={handleMailLeave}
-                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
+                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="25px" width="25px"/>
                 </a>
             </div>
 
