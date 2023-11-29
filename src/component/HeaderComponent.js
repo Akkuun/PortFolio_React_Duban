@@ -31,7 +31,7 @@ const HeaderComponent = () => {
     const [isGithubHovered, setIsGithubHovered] = useState(true);
     const [isLinkedinHovered, setIsLinkedinHovered] = useState(true);
     const [isMailHovered, setIsMailHovered] = useState(true);
-    const [isBackToTopHovered, setIsBackToTopHovered] = useState(true);
+    const [isBackToTopHovered, setIsBackToTopHovered] = useState(false);
     const handleGithubHover = () => {
         setIsGithubHovered(true);
     };

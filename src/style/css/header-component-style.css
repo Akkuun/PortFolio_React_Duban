@@ -5,7 +5,6 @@
 
 .header-component {
     cursor: None;
-    border: dashed red;
     height: 100vh;
     background-color: transparent;
 }
