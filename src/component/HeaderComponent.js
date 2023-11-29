@@ -65,7 +65,6 @@ const HeaderComponent = () => {
             <div id="back-to-top-section" >
                 <a href="#top-of-page">
                     <img  style={{
-                        /* Ajoutez les styles CSS pour la rotation ici */
                         transform: isBackToTopHovered ? 'rotate(180deg)' : 'none',
                         transition: 'transform 0.3s ease-in-out', // Ajoutez une transition pour un effet fluide
                     }}  onMouseLeave={handleBackToTopLeave} onMouseEnter={handleBackToTopHover}  src={isBackToTopHovered ? back_to_top_button_hover : back_to_top_button} alt="back-to-top" id="back-to-top-button" />
