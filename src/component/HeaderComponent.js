@@ -84,12 +84,12 @@ const HeaderComponent = () => {
                         ]}
                         wrapper="span"
                         speed={50}
-                        style={{fontSize: '1em', display: 'inline-block'}}
+                        style={{fontSize: '1em', display: 'inline-block', paddingTop: '1.5em'}}
                         repeat={Infinity}
                     />
                 </h1>
                 <div id="picture_about_me">
-                    <img src={pic} className={"layer"} alt="pic" id="pic" height="80%" width="80%" data-speed="2"/>
+                    <img src={pic} className={"layer"} alt="pic" id="pic" height="90%" width="90%" data-speed="2"/>
                 </div>
 
             </div>
