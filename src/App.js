@@ -57,10 +57,9 @@ function App() {
     return (
 
         <div className="App">
-            <body>
+
             <div className="cursor-dot" data-cursor-dot></div>
             <div className="cursor-outline" data-cursor-outline></div>
-            </body>
 
             <PageMain />
 

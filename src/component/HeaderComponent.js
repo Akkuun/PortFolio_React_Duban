@@ -51,12 +51,11 @@ const HeaderComponent = () => {
     }
 
     return (
-
         <div className="header-component">
-            <div id="back-to-top-section">
-                {/* eslint-disable-next-line no-undef */}
-                <img src={back_to_top_button} alt="back-to-top" id="back-to-top-button" />
-
+            <div id="back-to-top-section" >
+                <a href="#top-of-page">
+                <img   src={back_to_top_button} alt="back-to-top" id="back-to-top-button" />
+                </a>
             </div>
             <div className="Name">
                 <h4 id="Hi"> Hi, my name is </h4>

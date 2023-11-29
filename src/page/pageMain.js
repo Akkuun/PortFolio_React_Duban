@@ -12,7 +12,7 @@ import ProjectComponent from "../component/ProjectComponent";
 
 const PageMain = () => {
     return (
-        <div>
+        <div id="top-of-page">
         <HeaderComponent />
             <ProjectComponent />
         </div>
