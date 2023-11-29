@@ -59,7 +59,6 @@ const HeaderComponent = () => {
         setIsBackToTopHovered(false);
     }
 
-
     return (
         <div className="header-component">
             <div id="back-to-top-section" >
