@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/PortFolio_React_Duban/static/css/main.fc2791d7.css",
-    "main.js": "/PortFolio_React_Duban/static/js/main.04f80a90.js",
+    "main.css": "/PortFolio_React_Duban/static/css/main.ade552b8.css",
+    "main.js": "/PortFolio_React_Duban/static/js/main.25591b6b.js",
     "static/js/787.bee8839b.chunk.js": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js",
     "static/media/picture_about_me.PNG": "/PortFolio_React_Duban/static/media/picture_about_me.9421d409f7f1547eac48.PNG",
     "static/media/Lexend-Regular.ttf": "/PortFolio_React_Duban/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
     "static/media/mail.png": "/PortFolio_React_Duban/static/media/mail.e4bec7c9a337d3b7f3ec.png",
     "static/media/mailHover.png": "/PortFolio_React_Duban/static/media/mailHover.90bfb59e29a3e62370b2.png",
     "static/media/githubHover.png": "/PortFolio_React_Duban/static/media/githubHover.3c672c66b8ddd781201f.png",
+    "static/media/back-to-top_button.svg": "/PortFolio_React_Duban/static/media/back-to-top_button.34cc3421a542144eea6836fb6bdea5a8.svg",
+    "static/media/back-to-top_button_hover.svg": "/PortFolio_React_Duban/static/media/back-to-top_button_hover.b45ca94a4bc25984de9aae5fe3893979.svg",
     "index.html": "/PortFolio_React_Duban/index.html",
-    "main.fc2791d7.css.map": "/PortFolio_React_Duban/static/css/main.fc2791d7.css.map",
-    "main.04f80a90.js.map": "/PortFolio_React_Duban/static/js/main.04f80a90.js.map",
+    "main.ade552b8.css.map": "/PortFolio_React_Duban/static/css/main.ade552b8.css.map",
+    "main.25591b6b.js.map": "/PortFolio_React_Duban/static/js/main.25591b6b.js.map",
     "787.bee8839b.chunk.js.map": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc2791d7.css",
-    "static/js/main.04f80a90.js"
+    "static/css/main.ade552b8.css",
+    "static/js/main.25591b6b.js"
   ]
 }
