@@ -8,7 +8,7 @@ import github_hover from "../style/picture/githubHover.png";
 import linkedin_hover from "../style/picture/linkedinHover.png";
 import mail from "../style/picture/mail.png";
 import mailHover from "../style/picture/mailHover.png";
-
+import back_to_top_button from "../style/picture/back-to-top_button.svg"
 const HeaderComponent = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -51,7 +51,13 @@ const HeaderComponent = () => {
     }
 
     return (
+
         <div className="header-component">
+            <div id="back-to-top-section">
+                {/* eslint-disable-next-line no-undef */}
+                <img src={back_to_top_button} alt="back-to-top" id="back-to-top-button" />
+
+            </div>
             <div className="Name">
                 <h4 id="Hi"> Hi, my name is </h4>
                 <h1 id="Mathis"> Mathis Duban</h1>

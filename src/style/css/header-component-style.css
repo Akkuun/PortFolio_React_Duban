@@ -8,7 +8,6 @@
     border: dashed red;
     height: 100vh;
     background-color: transparent;
-
 }
 
 .Name {
@@ -16,14 +15,12 @@
     text-align: left;
     padding-left: 5%;
     padding-top: 7%;
-
 }
 
 #Hi {
     color: #9F55FF;
     margin-bottom: 1%;
     font-family: Lexend;
-
 }
 
 #Mathis {
@@ -51,10 +48,7 @@
     width: 100%;
 }
 
-
-
 #Texte_animation {
-
     color: grey;
 }
 
@@ -64,28 +58,38 @@
     padding-left: 10%;
     left: 60%;
     top: 20%;
-
 }
 
 #section {
     border: dashed blue;
-
 }
-#social{
+
+#social {
     padding-top: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 10%;
     width: 10%;
-
 }
-#social a{
+
+#social a {
     padding-left: 50%;
 }
 
 a:hover {
-cursor: None;
+    cursor: None;
+}
 
+#back-to-top-section {
+    position: fixed;
+    top: 7%;
+    left: 2%;
+    width: 10%;
+    color: white;
+}
 
+#back-to-top-section > img {
+    height: 20%;
+    width: 20%;
 }
