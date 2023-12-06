@@ -75,11 +75,11 @@ const HeaderComponent = () => {
                 <h1 id="Texte_animation">
                     <TypeAnimation
                         sequence={[
-                            'I build websites with React',
-                            1000,
-                            'I create software with web services',
-                            1000,
                             'I am a passionate developer',
+                            1000,
+                            'I love learn new technologies',
+                            1000,
+                            'I use DevOps tools and methods',
                             1000,
                         ]}
                         wrapper="span"
@@ -96,15 +96,15 @@ const HeaderComponent = () => {
             <div id="social">
                 <a href={"https://github.com/Akkuun"} target="_blank">
                     <img src={isGithubHovered ? github : github_hover} onMouseEnter={handleGithubLeave}
-                         onMouseLeave={handleGithubHover} alt="github" id="github-logo" height="25px" width="25px"/>
+                         onMouseLeave={handleGithubHover} alt="github" id="github-logo" height="50px" width="50px"/>
                 </a>
                 <a href={"https://www.linkedin.com/in/mathis-duban-b15957236/"} target="_blank">
                     <img src={isLinkedinHovered ? linkedin : linkedin_hover} onMouseEnter={handleLinkedinLeave}
-                         onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="25px" width="25px"/>
+                         onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
                 </a>
                 <a href={"mailto:mathisduban.pro@gmail.fr"} target="_blank">
                     <img src={isMailHovered? mail : mailHover} onMouseEnter={handleMailLeave}
-                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="25px" width="25px"/>
+                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="55px" width="55px"/>
                 </a>
             </div>
 
