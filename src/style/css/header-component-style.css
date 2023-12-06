@@ -17,7 +17,7 @@
 }
 
 #Hi {
-    color: #9F55FF;
+    color: #804abe;
     margin-bottom: 1%;
     font-family: Lexend;
 }
@@ -37,7 +37,7 @@
     left: 0; /* Alignement à gauche */
     width: 100%; /* Barre de soulignement prenant toute la largeur du texte */
     height: 8%; /* Épaisseur du soulignement */
-    background-color: #9F55FF; /* Couleur de la barre de soulignement */
+    background-color: #804abe; /* Couleur de la barre de soulignement */
     border-radius: 2px; /* Arrondir les coins du soulignement */
     box-shadow: 0px 8px 15px rgba(159, 85, 255, 1);
 }
