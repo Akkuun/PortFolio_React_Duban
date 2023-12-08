@@ -9,6 +9,7 @@ import linkedin_hover from "../style/picture/linkedinHover.png";
 import mail from "../style/picture/mail.png";
 import mailHover from "../style/picture/mailHover.png";
 import back_to_top_button from "../style/picture/back-to-top_button.svg"
+import back_to_top_button_hover from "../style/picture/back-to-top_button_hover.svg"
 const HeaderComponent = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -30,6 +31,7 @@ const HeaderComponent = () => {
     const [isGithubHovered, setIsGithubHovered] = useState(true);
     const [isLinkedinHovered, setIsLinkedinHovered] = useState(true);
     const [isMailHovered, setIsMailHovered] = useState(true);
+    const [isBackToTopHovered, setIsBackToTopHovered] = useState(false);
     const handleGithubHover = () => {
         setIsGithubHovered(true);
     };
@@ -50,13 +52,22 @@ const HeaderComponent = () => {
         setIsMailHovered(false);
     }
 
+    const handleBackToTopHover = () => {
+        setIsBackToTopHovered(true);
+    }
+    const handleBackToTopLeave = () => {
+        setIsBackToTopHovered(false);
+    }
+
     return (
-
         <div className="header-component">
-            <div id="back-to-top-section">
-                {/* eslint-disable-next-line no-undef */}
-                <img src={back_to_top_button} alt="back-to-top" id="back-to-top-button" />
-
+            <div id="back-to-top-section" >
+                <a href="#top-of-page">
+                    <img  style={{
+                        transform: isBackToTopHovered ? 'rotate(180deg)' : 'none',
+                        transition: 'transform 0.3s ease-in-out', // Ajoutez une transition pour un effet fluide
+                    }}  onMouseLeave={handleBackToTopLeave} onMouseEnter={handleBackToTopHover}  src={isBackToTopHovered ? back_to_top_button_hover : back_to_top_button} alt="back-to-top" id="back-to-top-button" />
+                </a>
             </div>
             <div className="Name">
                 <h4 id="Hi"> Hi, my name is </h4>
@@ -64,36 +75,36 @@ const HeaderComponent = () => {
                 <h1 id="Texte_animation">
                     <TypeAnimation
                         sequence={[
-                            'I build websites with React',
-                            1000,
-                            'I create software with web services',
-                            1000,
                             'I am a passionate developer',
+                            1000,
+                            'I love learn new technologies',
+                            1000,
+                            'I use DevOps tools and methods',
                             1000,
                         ]}
                         wrapper="span"
                         speed={50}
-                        style={{fontSize: '1em', display: 'inline-block'}}
+                        style={{fontSize: '1em', display: 'inline-block', paddingTop: '1.5em'}}
                         repeat={Infinity}
                     />
                 </h1>
                 <div id="picture_about_me">
-                    <img src={pic} className={"layer"} alt="pic" id="pic" height="80%" width="80%" data-speed="2"/>
+                    <img src={pic} className={"layer"} alt="pic" id="pic" height="90%" width="90%" data-speed="2"/>
                 </div>
 
             </div>
             <div id="social">
                 <a href={"https://github.com/Akkuun"} target="_blank">
                     <img src={isGithubHovered ? github : github_hover} onMouseEnter={handleGithubLeave}
-                         onMouseLeave={handleGithubHover} alt="github" id="github-logo" height="25px" width="25px"/>
+                         onMouseLeave={handleGithubHover} alt="github" id="github-logo" height="50px" width="50px"/>
                 </a>
                 <a href={"https://www.linkedin.com/in/mathis-duban-b15957236/"} target="_blank">
                     <img src={isLinkedinHovered ? linkedin : linkedin_hover} onMouseEnter={handleLinkedinLeave}
-                         onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="25px" width="25px"/>
+                         onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
                 </a>
                 <a href={"mailto:mathisduban.pro@gmail.fr"} target="_blank">
                     <img src={isMailHovered? mail : mailHover} onMouseEnter={handleMailLeave}
-                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="25px" width="25px"/>
+                         onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="55px" width="55px"/>
                 </a>
             </div>
 

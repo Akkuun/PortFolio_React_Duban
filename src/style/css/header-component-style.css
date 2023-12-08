@@ -4,7 +4,6 @@
 }
 .header-component {
     cursor: None;
-    border: dashed red;
     height: 100vh;
     background-color: transparent;
 }
@@ -12,10 +11,10 @@
     font-family: Lexend;
     text-align: left;
     padding-left: 5%;
-    padding-top: 7%;
+    padding-top: 12%;
 }
 #Hi {
-    color: #9F55FF;
+    color: #804abe;
     margin-bottom: 1%;
     font-family: Lexend;
 }
@@ -33,7 +32,7 @@
     left: 0; /* Alignement à gauche */
     width: 100%; /* Barre de soulignement prenant toute la largeur du texte */
     height: 8%; /* Épaisseur du soulignement */
-    background-color: #9F55FF; /* Couleur de la barre de soulignement */
+    background-color: #804abe; /* Couleur de la barre de soulignement */
     border-radius: 2px; /* Arrondir les coins du soulignement */
     box-shadow: 0px 8px 15px rgba(159, 85, 255, 1);
 }
@@ -47,8 +46,8 @@
 #picture_about_me {
     position: absolute;
     padding-left: 10%;
-    left: 60%;
-    top: 20%;
+    left: 55%;
+    top: 12%;
 }
 #section {
     border: dashed blue;
@@ -58,11 +57,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 10%;
-    width: 10%;
+    height: 2%;
+    width: 15%;
+    padding-left: 5%;
 }
 #social a {
-    padding-left: 50%;
+
+    padding-left: 20%;
 }
 a:hover {
     cursor: None;
@@ -78,3 +79,8 @@ a:hover {
     height: 20%;
     width: 20%;
 }
+
+#back-to-top-section > a {
+    cursor: None;
+}
+

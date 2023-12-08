@@ -1,0 +1,93 @@
+.nav {
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+}
+
+
+.menu-toggle {
+
+}
+
+.nav-overlay {
+    position: fixed;
+    background: rgba(128, 128, 128, 0.7); /* Couleur grise avec une opacité de 0.7 */
+    z-index: -2;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 4em;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hamBox {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.hamBox:hover {
+    background-color: #676767;
+}
+
+.hamBoxOpen {
+    background-color: transparent;
+}
+
+.lineTop, .lineBottom {
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+
+}
+
+.lineTop {
+    top: 2.2em;
+}
+.lineTop2{
+    top: 2.3em;
+}
+
+.lineBottom {
+    bottom: 0.8em;
+}
+
+.lineTop .spin {
+    top: 1.8em;
+
+}
+
+.lineTop2 .spin {
+    top: 2em;
+
+}
+
+.lineBottom .spin {
+    bottom: 2.35em;
+    transform: rotate(225deg);
+    background: white;
+}
+
+
