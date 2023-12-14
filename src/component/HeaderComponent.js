@@ -8,8 +8,7 @@ import github_hover from "../style/picture/githubHover.png";
 import linkedin_hover from "../style/picture/linkedinHover.png";
 import mail from "../style/picture/mail.png";
 import mailHover from "../style/picture/mailHover.png";
-import back_to_top_button from "../style/picture/back-to-top_button.svg"
-import back_to_top_button_hover from "../style/picture/back-to-top_button_hover.svg"
+import BackToTopComponent from "./back-to-top-component";
 const HeaderComponent = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -31,7 +30,6 @@ const HeaderComponent = () => {
     const [isGithubHovered, setIsGithubHovered] = useState(true);
     const [isLinkedinHovered, setIsLinkedinHovered] = useState(true);
     const [isMailHovered, setIsMailHovered] = useState(true);
-    const [isBackToTopHovered, setIsBackToTopHovered] = useState(false);
     const handleGithubHover = () => {
         setIsGithubHovered(true);
     };
@@ -52,23 +50,13 @@ const HeaderComponent = () => {
         setIsMailHovered(false);
     }
 
-    const handleBackToTopHover = () => {
-        setIsBackToTopHovered(true);
-    }
-    const handleBackToTopLeave = () => {
-        setIsBackToTopHovered(false);
-    }
+
 
     return (
         <div className="header-component">
-            <div id="back-to-top-section" >
-                <a href="#top-of-page">
-                    <img  style={{
-                        transform: isBackToTopHovered ? 'rotate(180deg)' : 'none',
-                        transition: 'transform 0.3s ease-in-out', // Ajoutez une transition pour un effet fluide
-                    }}  onMouseLeave={handleBackToTopLeave} onMouseEnter={handleBackToTopHover}  src={isBackToTopHovered ? back_to_top_button_hover : back_to_top_button} alt="back-to-top" id="back-to-top-button" />
-                </a>
-            </div>
+
+
+
             <div className="Name">
                 <h4 id="Hi"> Hi, my name is </h4>
                 <h1 id="Mathis"> Mathis Duban</h1>

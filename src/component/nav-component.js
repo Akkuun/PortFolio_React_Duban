@@ -1,12 +1,14 @@
 import React from "react";
 import {useState} from "react";
 import "../style/css/nav-component.css";
-
+import BackToTopComponent from "./back-to-top-component";
 
 const NavComponent = () => {
     const [navOpen, setNavOpen] = useState(false);
     return (
+
         <div className="nav">
+            <BackToTopComponent/>
             <div className="nav-container">
                 <div className="navbar">
 

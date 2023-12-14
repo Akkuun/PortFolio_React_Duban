@@ -68,20 +68,4 @@
 a:hover {
     cursor: None;
 }
-#back-to-top-section {
-    position: fixed;
-    top: 7%;
-    left: 2%;
-    width: 10%;
-    color: white;
-}
-#back-to-top-section > img {
-    height: 20%;
-    width: 20%;
-
-}
-
-#back-to-top-section > a {
-    cursor: None;
-}
 

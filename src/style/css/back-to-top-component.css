@@ -1,0 +1,24 @@
+#back-to-top-button{
+    position: fixed;
+}
+
+#back-to-top-section {
+
+
+    color: white;
+}
+#back-to-top-section > img {
+    height: 4%;
+    width: 4%;
+    position: absolute;
+    z-index: 45;
+    left: 5%;
+    top: 2%;
+
+}
+
+#back-to-top-section > a {
+    cursor: None;
+
+
+}
