@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortFolio_React_Duban/static/css/main.9abcd2f3.css",
-    "main.js": "/PortFolio_React_Duban/static/js/main.4b57c7f1.js",
+    "main.css": "/PortFolio_React_Duban/static/css/main.2b7631be.css",
+    "main.js": "/PortFolio_React_Duban/static/js/main.c633323a.js",
     "static/js/787.bee8839b.chunk.js": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js",
     "static/media/picture_about_me.PNG": "/PortFolio_React_Duban/static/media/picture_about_me.9421d409f7f1547eac48.PNG",
     "static/media/Lexend-Regular.ttf": "/PortFolio_React_Duban/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
@@ -11,12 +11,12 @@
     "static/media/back-to-top_button.svg": "/PortFolio_React_Duban/static/media/back-to-top_button.34cc3421a542144eea6836fb6bdea5a8.svg",
     "static/media/back-to-top_button_hover.svg": "/PortFolio_React_Duban/static/media/back-to-top_button_hover.b45ca94a4bc25984de9aae5fe3893979.svg",
     "index.html": "/PortFolio_React_Duban/index.html",
-    "main.9abcd2f3.css.map": "/PortFolio_React_Duban/static/css/main.9abcd2f3.css.map",
-    "main.4b57c7f1.js.map": "/PortFolio_React_Duban/static/js/main.4b57c7f1.js.map",
+    "main.2b7631be.css.map": "/PortFolio_React_Duban/static/css/main.2b7631be.css.map",
+    "main.c633323a.js.map": "/PortFolio_React_Duban/static/js/main.c633323a.js.map",
     "787.bee8839b.chunk.js.map": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9abcd2f3.css",
-    "static/js/main.4b57c7f1.js"
+    "static/css/main.2b7631be.css",
+    "static/js/main.c633323a.js"
   ]
 }
