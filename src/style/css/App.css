@@ -11,6 +11,7 @@ html{
     background-color: #130E16;
     cursor: none;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 .cursor-dot{
     width: 14px;

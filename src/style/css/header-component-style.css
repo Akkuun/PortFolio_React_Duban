@@ -47,7 +47,7 @@
     position: absolute;
     padding-left: 10%;
     left: 55%;
-    top: 12%;
+    top: 10%;
 }
 #section {
     border: dashed blue;
@@ -69,6 +69,7 @@ a:hover {
     cursor: None;
 }
 #back-to-top-section {
+    z-index: 999;
     position: fixed;
     top: 7%;
     left: 2%;
@@ -78,6 +79,7 @@ a:hover {
 #back-to-top-section > img {
     height: 20%;
     width: 20%;
+
 }
 
 #back-to-top-section > a {
