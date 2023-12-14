@@ -37,7 +37,7 @@ const PageMain = () => {
                 <div>
                     <ProjectComponent />
                 </div>
-                <div>
+                <div id="map">
                     <ProjectComponent />
                 </div>
             </ReactPageScroller>

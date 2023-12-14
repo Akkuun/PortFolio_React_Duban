@@ -23,7 +23,13 @@ const NavComponent = () => {
                     top: navOpen ? "0" : "-100%",
                     transitionDelay: navOpen ? "0ms" : "300ms",
                     background : navOpen ?  " rgba(48, 46, 48, 0.7)" : "transparent",
-                }}></div>
+                }}>
+
+
+                    <a href="#map"> toto</a>
+
+
+                </div>
             </div>
         </div>
     );
