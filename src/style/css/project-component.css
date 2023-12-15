@@ -1,7 +1,17 @@
 .project-component{
     height: 100vh;
-
-    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: #130E16;
     color: black;
 
+}
+
+.color-transition-white {
+    background-color: wheat; /* Couleur rouge */
+    color: white; /* Couleur du texte */
+}
+
+.color-transition-blue {
+    background-color: white; /* Couleur rouge */
+    color: white; /* Couleur du texte */
 }
