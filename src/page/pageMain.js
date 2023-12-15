@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
+import ProgressBar from "react-scroll-progress-bar";
 import HeaderComponent from "../component/HeaderComponent";
 import ProjectComponent from "../component/ProjectComponent";
 import NavComponent from "../component/nav-component";
@@ -24,16 +25,14 @@ const PageMain = () => {
                 customPageNumber={currentPage}
             >
                 <div>
-                    {/*<NavComponent />*/}
+                    <NavComponent />
                     <HeaderComponent />
                 </div>
                 <div>
-
-                    <ProjectComponent />
+                    <ProjectComponent Valeur_Parametre1={currentPage} />
                 </div>
                 <div>
-
-                    <ProjectComponent />
+                    <ProjectComponent Valeur_Parametre1={currentPage}  />
                 </div>
                 <div>
                     <ProjectComponent />
