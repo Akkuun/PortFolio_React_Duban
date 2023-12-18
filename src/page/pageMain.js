@@ -8,6 +8,7 @@ const PageMain = () => {
 
 
     return (
+        <div className="scroll-container">
         <div id="pageMain">
                 <div>
                     <NavComponent />
@@ -16,6 +17,26 @@ const PageMain = () => {
                 <div>
                     <ProjectComponent />
                 </div>
+            <div>
+                <ProjectComponent />
+            </div>
+            <div>
+                <ProjectComponent />
+            </div>
+            <div>
+                <ProjectComponent />
+            </div>
+            <div>
+                <ProjectComponent />
+            </div>
+            <div>
+                <ProjectComponent />
+            </div>
+            <div>
+                <ProjectComponent />
+            </div>
+
+        </div>
         </div>
     );
 };
