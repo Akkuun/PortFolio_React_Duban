@@ -96,7 +96,7 @@ const HeaderComponent = () => {
                 </a>
             </div>
 
-
+<BackToTopComponent/>
         </div>
     );
 };

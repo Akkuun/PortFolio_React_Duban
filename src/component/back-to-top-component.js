@@ -16,7 +16,7 @@ const BackToTopComponent = () => {
 
     const handleClick = () => {
         // Redirection vers la section #top-of-page
-        window.location.href = '#top-of-page';
+      //  window.location.href = '#top-of-page';
     }
 
     return (
@@ -24,7 +24,7 @@ const BackToTopComponent = () => {
 
             <img
                  style={{
-                     transform: isBackToTopHovered ? 'none' : 'rotate(180deg)',
+                     // transform: isBackToTopHovered ? 'none' : 'rotate(180deg)',
                      transition: 'transform 0.3s ease-in-out', // Ajoutez une transition pour un effet fluide
                  }}
 
