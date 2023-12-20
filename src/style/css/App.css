@@ -44,12 +44,20 @@ html{
     cursor: None;
 }
 /* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
-::-webkit-scrollbar {
-    width: 8px; /* Largeur de la barre de défilement */
-    height: 8px; /* Hauteur de la barre de défilement */
-}
+/*::-webkit-scrollbar {*/
+/*    width: 8px; !* Largeur de la barre de défilement *!*/
+/*    height: 8px; !* Hauteur de la barre de défilement *!*/
+/*}*/
 
-::-webkit-scrollbar-thumb {
-    background-color: #888; /* Couleur de la poignée de défilement */
-    border-radius: 4px; /* Arrondi de la poignée de défilement */
+/*::-webkit-scrollbar-thumb {*/
+/*    background-color: #888; !* Couleur de la poignée de défilement *!*/
+/*    border-radius: 4px; !* Arrondi de la poignée de défilement *!*/
+/*}*/
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
 }

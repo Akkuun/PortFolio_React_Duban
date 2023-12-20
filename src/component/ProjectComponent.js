@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../style/css/project-component.css";
 
-const ProjectComponent = ({ Valeur_Parametre_page }) => {
+const ProjectComponent = () => {
 
 
 
     return (
         <div className="project-component">
-            <li> salut </li>
+            <li> fzefz zeff  </li>
         </div>
     );
 };
