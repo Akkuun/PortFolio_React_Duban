@@ -14,11 +14,19 @@
     padding-top: 12%;
 }
 #Hi {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
     color: #804abe;
     margin-bottom: 1%;
     font-family: Lexend;
 }
 #Mathis {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 2s ease-in-out forwards;
     color: white;
     font-size: 9vh;
     display: inline;
@@ -48,6 +56,16 @@
     padding-left: 10%;
     left: 55%;
     top: 2%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    animation-delay: 2s;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 #section {
     border: dashed blue;
