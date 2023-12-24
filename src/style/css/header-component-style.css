@@ -24,9 +24,9 @@
 }
 #Mathis {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    animation-delay: 1s;
-    animation: fadeIn 2s ease-in-out forwards;
+    transition: opacity 5s ease-in-out;
+    animation-delay: 5s;
+    animation: fadeIn 5s ease-in-out forwards;
     color: white;
     font-size: 9vh;
     display: inline;
@@ -50,6 +50,10 @@
 }
 #Texte_animation {
     color: grey;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    animation-delay: 5s;
+    animation: fadeIn 5s ease-in-out forwards;
 }
 #picture_about_me {
     position: absolute;
@@ -59,7 +63,7 @@
     opacity: 0;
     transition: opacity 2s ease-in-out;
     animation-delay: 2s;
-    animation: fadeIn 1s ease-in-out forwards;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -78,6 +82,10 @@
     height: 2%;
     width: 15%;
     padding-left: 5%;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    animation-delay: 5s;
+    animation: fadeIn 5s ease-in-out forwards;
 }
 #social a {
 
