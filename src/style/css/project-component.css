@@ -1,6 +1,8 @@
 .project-component{
     height: 100vh;
-    background-color: aqua;
-
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: white;
+    color: black;
 
 }
+

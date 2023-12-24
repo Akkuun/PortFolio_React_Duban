@@ -10,6 +10,8 @@ body{
 html{
     background-color: #130E16;
     cursor: none;
+    scroll-behavior: smooth;
+
 }
 .cursor-dot{
     width: 14px;
@@ -23,6 +25,7 @@ html{
     border: 1px solid hsla(0, 0%, 100%, 0.37);
     transition: left 0.3s ease-out, top 0.3s ease-out;
     background-color: rgb(128, 128, 128, 0.1);
+
 
 }
 
@@ -39,4 +42,22 @@ html{
 }
 .cursor-dot:hover,.cursor-outline:hover {
     cursor: None;
+}
+/* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
+/*::-webkit-scrollbar {*/
+/*    width: 8px; !* Largeur de la barre de défilement *!*/
+/*    height: 8px; !* Hauteur de la barre de défilement *!*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+/*    background-color: #888; !* Couleur de la poignée de défilement *!*/
+/*    border-radius: 4px; !* Arrondi de la poignée de défilement *!*/
+/*}*/
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
 }
