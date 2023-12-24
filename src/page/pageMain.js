@@ -4,6 +4,7 @@ import ProjectComponent from "../component/ProjectComponent";
 import NavComponent from "../component/nav-component";
 import "../style/css/pageMain.css";
 import ReactPageScroller from "react-page-scroller";
+import AboutMeComponent from "../component/about-me-component";
 
 const PageMain = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -29,7 +30,7 @@ const PageMain = () => {
                     <HeaderComponent/>
                 </div>
                 <div>
-                    <ProjectComponent/>
+                    <AboutMeComponent/>
                 </div>
                 <div>
                     <ProjectComponent/>
