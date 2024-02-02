@@ -6,3 +6,9 @@
 #aboutmecomponent{
     color: grey;
 }
+#text_me{
+    font-size: 9vh;
+    font-family: Lexend;
+    padding-top: 10%;
+    color: white;
+}
