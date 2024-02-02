@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import HeaderComponent from "../component/HeaderComponent";
-import ProjectComponent from "../component/ProjectComponent";
+import projectComponent from "../component/project-component";
 import NavComponent from "../component/nav-component";
 import "../style/css/pageMain.css";
 import ReactPageScroller from "react-page-scroller";
 import AboutMeComponent from "../component/about-me-component";
+import ProjectComponent from "../component/project-component";
 
 const PageMain = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -36,21 +37,8 @@ const PageMain = () => {
                     <ProjectComponent/>
                 </div>
                 <div>
-                    <ProjectComponent/>
+                    <aboutMeComponent/>
                 </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
-
 
             </ReactPageScroller>
         </div>
