@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import HeaderComponent from "../component/HeaderComponent";
-import projectComponent from "../component/project-component";
 import NavComponent from "../component/nav-component";
 import "../style/css/pageMain.css";
 import ReactPageScroller from "react-page-scroller";

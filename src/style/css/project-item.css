@@ -1,0 +1,54 @@
+/* project-item.css */
+@font-face {
+    font-family: 'Lexend';
+    src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
+}
+
+.box {
+    border: 2px solid grey;
+
+    border-radius: 5%;
+    text-align: center;
+    margin: 4%;
+    position: relative;
+}
+
+
+
+.project-title {
+    color: black;
+    font-size: 3rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-title{
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Lexend ;
+    transform: translate(-50%, -50%);
+
+
+}
