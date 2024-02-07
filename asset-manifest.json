@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/PortFolio_React_Duban/static/css/main.a6c58c5f.css",
-    "main.js": "/PortFolio_React_Duban/static/js/main.daf44f23.js",
+    "main.css": "/PortFolio_React_Duban/static/css/main.92baff3e.css",
+    "main.js": "/PortFolio_React_Duban/static/js/main.8f921970.js",
     "static/js/787.bee8839b.chunk.js": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js",
     "static/media/picture_about_me.PNG": "/PortFolio_React_Duban/static/media/picture_about_me.9421d409f7f1547eac48.PNG",
+    "static/media/repartition.png": "/PortFolio_React_Duban/static/media/repartition.c248e3e95d30009db246.png",
+    "static/media/plante.jpg": "/PortFolio_React_Duban/static/media/plante.0bc804aa1f1976d1e969.jpg",
+    "static/media/CGJ2024.png": "/PortFolio_React_Duban/static/media/CGJ2024.ffda7eb52f38a1a2db76.png",
     "static/media/Lexend-Regular.ttf": "/PortFolio_React_Duban/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
     "static/media/mail.png": "/PortFolio_React_Duban/static/media/mail.e4bec7c9a337d3b7f3ec.png",
     "static/media/mailHover.png": "/PortFolio_React_Duban/static/media/mailHover.90bfb59e29a3e62370b2.png",
     "static/media/githubHover.png": "/PortFolio_React_Duban/static/media/githubHover.3c672c66b8ddd781201f.png",
-    "static/media/back-to-top_button_hover.svg": "/PortFolio_React_Duban/static/media/back-to-top_button_hover.60dbb7cadb9e1aa1f6a65b6f97edbc2f.svg",
     "static/media/back-to-top_button.svg": "/PortFolio_React_Duban/static/media/back-to-top_button.34cc3421a542144eea6836fb6bdea5a8.svg",
+    "static/media/back-to-top_button_hover.svg": "/PortFolio_React_Duban/static/media/back-to-top_button_hover.b45ca94a4bc25984de9aae5fe3893979.svg",
     "index.html": "/PortFolio_React_Duban/index.html",
-    "main.a6c58c5f.css.map": "/PortFolio_React_Duban/static/css/main.a6c58c5f.css.map",
-    "main.daf44f23.js.map": "/PortFolio_React_Duban/static/js/main.daf44f23.js.map",
+    "main.92baff3e.css.map": "/PortFolio_React_Duban/static/css/main.92baff3e.css.map",
+    "main.8f921970.js.map": "/PortFolio_React_Duban/static/js/main.8f921970.js.map",
     "787.bee8839b.chunk.js.map": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6c58c5f.css",
-    "static/js/main.daf44f23.js"
+    "static/css/main.92baff3e.css",
+    "static/js/main.8f921970.js"
   ]
 }
