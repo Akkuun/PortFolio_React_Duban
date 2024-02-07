@@ -1,13 +1,15 @@
 import React from 'react';
 import '../style/css/project-component.css';
 import ProjectItem from "./project-item";
-import repartitoon from '../style/picture/repartition.png';
+import repartition from '../style/picture/repartition.png';
+import plante from '../style/picture/plante.jpg';
+import CDG2024 from '../style/picture/CGJ2024.png';
 
 const ProjectComponent = () => {
     const projects = [
-        { title: 'Project 1', image: repartitoon, gridColumn: 1, gridRow: 1 },
-        { title: 'Project 2', image: 'url_image_projet2.jpg', gridColumn: 1, gridRow: 3 },
-        { title: 'Project 3', image: 'url_image_projet3.jpg', gridColumn: 2, gridRow: 3 },
+        { title: 'Project 1', image: CDG2024, gridColumn: 1, gridRow: 1 },
+        { title: 'Project 2 ', image: plante, gridColumn: 1, gridRow: 3 },
+        { title: 'Project 3', image: repartition, gridColumn: 2, gridRow: 3 },
     ];
 
     return (
