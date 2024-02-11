@@ -5,6 +5,7 @@ import linkedin from "../style/picture/linkedin.png";
 import github_hover from "../style/picture/githubHover.png";
 import linkedin_hover from "../style/picture/linkedinHover.png";
 import React, {useState} from 'react';
+import qrcode from "../style/picture/QRcode.png";
 
 const FormComponent = () => {
 
@@ -33,8 +34,18 @@ const FormComponent = () => {
                     <h4 id="Touch">Get in touch</h4>
                 </div>
 
+                <div id="emailAdress">
+                    <h4 id="WhiteH4Title">Email adress</h4>
+                    <h5 id="GreyH5Text">matougamer@gmail.com</h5>
+                </div>
+
+                <div id="phoneNumber">
+                    <h4 id="WhiteH4Title">Phone number</h4>
+                    <h5 id="GreyH5Text">+0600000000</h5>
+                </div>
+
                 <div>
-                <div id="social">
+                <div id="socialIcons">
                 <a href={"https://github.com/Akkuun"} target="_blank">
                     <img src={isGithubHovered_contact ? github : github_hover} onMouseEnter={handleGithubLeave_contact}
                          onMouseLeave={handleGithubHover_contact} alt="github" id="github-logo" height="50px" width="50px"/>
@@ -46,22 +57,20 @@ const FormComponent = () => {
                 </div>
                 </div>
             </div>
-
-            <div id="emailAndPhone">
-                <div id="emailAdress">
-                    <h4 id="WhiteH4Title">Email adress</h4>
-                    <h5 id="GreyH5Text">matougamer@gmail.com</h5>
-                </div>
-
-                <div id="phoneNumber">
-                    <h4 id="WhiteH4Title">Phone number</h4>
-                    <h5 id="GreyH5Text">+0600000000</h5>
-                </div>
-            </div>
         
             <div id="cv">
                 <h4 id="WhiteH4Title">CV</h4>
-                <h5 id="GreyH5Text">Where you can find informations about me</h5>
+
+                <div id="cvContent">
+                    <h5 id="LittleSubtitle">Scan the QR code to download my CV : </h5>
+                    <img src={qrcode} alt="qrcode" id="qrcode" height="100%" width="100%" data-speed="2"/>
+                </div>
+
+                <div id="cvContent">
+                    <h5 id="LittleSubtitle">Or clic on the link to download it here : </h5>
+                    <h5 id="GreyH5Text">linkpdf.pdf</h5>
+                </div>
+
             </div>
             
         </div>

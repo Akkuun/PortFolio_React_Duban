@@ -9,7 +9,7 @@
     font-family: Lexend;
     display: flex;
     padding-left: 5%;
-    border: red dotted;
+    /*border: red dotted;*/
     height: 100vh;
 }
 #WhiteH4Title {
@@ -33,14 +33,16 @@
     margin-bottom: 1%;
     margin-top: 0%;
     font-size: 3vh;
-    
 }
 
 
 #contactAndSocial {
-    /*border: green dotted;*/
+    /*border: blue dotted;*/
     margin-right: 10%;
-    padding-top: 10%;
+    padding-top: 5%;
+}
+#contact {
+    padding-bottom: 20%;
 }
 #ContactTitle {
     opacity: 0;
@@ -64,19 +66,16 @@
     font-size: 4vh;
 }
 #phoneNumber {
-    padding-top: 60%;
-    text-align: center;
+    text-align: justify;
+    padding-bottom: 20%;
 }
 #emailAdress {
-    text-align: center;
+    text-align: justify;
+    padding-bottom: 20%;
 }
 
-#emailAndPhone {
-    /*border: green dotted;*/
-    margin-right: 10%;
-    padding-top: 20%;
-}
-#social {
+
+#socialIcons {
     padding-top: 1%;
     display: flex;
     flex-direction: row;
@@ -89,7 +88,7 @@
     animation-delay: 5s;
     animation: fadeIn 5s ease-in-out forwards;
 }
-#social a {
+#socialIcons a {
     padding-left: 20%;
 }
 a:hover {
@@ -98,6 +97,24 @@ a:hover {
 
 #cv {
     /*border: green dotted;*/
-    padding-top: 15%;
+    padding-top: 7%;
+    margin-left: 15%;
+    text-align: justify;
+}
+
+#cvContent {
+    padding-top: 8%;
     text-align: center;
+}
+
+#LittleSubtitle {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: #8d62be;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 2vh;
 }
