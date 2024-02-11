@@ -5,6 +5,8 @@ import "../style/css/pageMain.css";
 import ReactPageScroller from "react-page-scroller";
 import AboutMeComponent from "../component/about-me-component";
 import ProjectComponent from "../component/project-component";
+import FormComponent  from "../component/FormComponent";
+
 
 const PageMain = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -36,7 +38,20 @@ const PageMain = () => {
                     <ProjectComponent/>
                 </div>
                 <div>
+
                     <aboutMeComponent/>
+                </div>
+                <div>
+                    <ProjectComponent/>
+                </div>
+                <div>
+                    <ProjectComponent/>
+                </div>
+                <div>
+                    <ProjectComponent/>
+                </div>
+                <div>
+                    <FormComponent/>
                 </div>
 
             </ReactPageScroller>
