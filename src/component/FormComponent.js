@@ -6,6 +6,8 @@ import github_hover from "../style/picture/githubHover.png";
 import linkedin_hover from "../style/picture/linkedinHover.png";
 import React, {useState} from 'react';
 import qrcode from "../style/picture/QRcode.png";
+import { Player } from '@lottiefiles/react-lottie-player';
+import animatedArrow from '../style/gif/Animation_arrow.json';
 
 const FormComponent = () => {
 
@@ -63,7 +65,7 @@ const FormComponent = () => {
 
                 <div id="cvContent">
                     <h5 id="LittleSubtitle">Scan the QR code to download my CV : </h5>
-                    <img src={qrcode} alt="qrcode" id="qrcode" height="100%" width="100%" data-speed="2"/>
+                    <img src={qrcode} alt="qrcode" id="qrcode"/>
                 </div>
 
                 <div id="cvContent">
@@ -71,6 +73,13 @@ const FormComponent = () => {
                     <h5 id="GreyH5Text">linkpdf.pdf</h5>
                 </div>
 
+            </div>
+
+            <div id="playerAnimation">
+                <Player
+                    loop autoplay  src={animatedArrow}
+                    className="player" id="animationArrow" speed={0.75}
+                />
             </div>
             
         </div>
