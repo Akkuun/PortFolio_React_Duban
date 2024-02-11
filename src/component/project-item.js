@@ -3,7 +3,7 @@
 import React from 'react';
 import '../style/css/project-item.css';
 
-const ProjectItem = ({ title, image, gridColumn, gridRow }) => {
+const ProjectItem = ({ title, image, gridColumn, gridRow,colorTitle }) => {
     const boxStyle = {
         gridColumn: `span ${gridColumn}`,
         gridRow: `span ${gridRow}`,
@@ -12,7 +12,7 @@ const ProjectItem = ({ title, image, gridColumn, gridRow }) => {
     return (
         <div className="box" style={boxStyle}>
             <img src={image} alt={title} />
-            <div className="project-title">{title}</div>
+            <div className="project-title" style={ {color : colorTitle}}>{title}</div>
         </div>
     );
 };

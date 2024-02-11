@@ -7,9 +7,9 @@ import CDG2024 from '../style/picture/CGJ2024.png';
 
 const ProjectComponent = () => {
     const projects = [
-        { title: 'Project 1', image: CDG2024, gridColumn: 1, gridRow: 1 },
-        { title: 'Project 2 ', image: plante, gridColumn: 1, gridRow: 3 },
-        { title: 'Project 3', image: repartition, gridColumn: 2, gridRow: 3 },
+        { title: 'Project 1', image: CDG2024, gridColumn: 1, gridRow: 1, colorTitle: 'white' },
+        { title: 'Project 2 ', image: plante, gridColumn: 1, gridRow: 3, colorTitle: 'white' },
+        { title: 'Project 3', image: repartition, gridColumn: 2, gridRow: 3, colorTitle: 'black' },
     ];
 
     return (
@@ -22,6 +22,7 @@ const ProjectComponent = () => {
                     image={project.image}
                     gridColumn={project.gridColumn}
                     gridRow={project.gridRow}
+                    colorTitle={project.colorTitle}
                 />
             ))}
         </div>
