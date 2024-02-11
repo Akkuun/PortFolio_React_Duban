@@ -1,8 +1,49 @@
-.project-component{
-    height: 100vh;
-    transition: background-color 0.5s ease, color 0.5s ease;
-    background-color: white;
-    color: black;
+@font-face {
+    font-family: 'Lexend';
+    src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    grid-template-rows: repeat(2, 1fr); /* 2 lignes égales */
+    gap: 1%; /* Espace entre les éléments */
+    height: 95vh; /* La hauteur de la grille est égale à la hauteur de la vue */
+    margin-top: 2%;
+}
+
+.box {
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+
+/* Ajustez la taille des boîtes en fonction de vos besoins */
+.box1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.box2 {
+    grid-column: span 1;
+    grid-row: span 3;
+    margin-right: 5%;
+}
+
+.box3 {
+    grid-column: span 2;
+    grid-row: span 3;
 
 }
 
+
+
+#project-title{
+    color: white;
+    font-size: 9vh;
+    display: inline;
+    position: relative;
+    font-family: Lexend;
+}

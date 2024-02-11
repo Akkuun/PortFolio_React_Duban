@@ -1,0 +1,54 @@
+/* project-item.css */
+@font-face {
+    font-family: 'Lexend';
+    src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
+}
+
+.box {
+    border: 2px solid grey;
+    border-radius: 5%;
+    text-align: center;
+    margin: 4%;
+    position: relative;
+    overflow: hidden; /* Pour s'assurer que l'image ne dépasse pas la boîte */
+}
+
+
+
+.project-title {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Lexend', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1; /* Pour afficher le titre au-dessus de l'image */
+}
+
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour couvrir complètement le conteneur sans déformation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease; /* Transition agréable lors du survol */
+}
+
+.project-title {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Lexend', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1; /* Pour afficher le titre au-dessus de l'image */
+}
+.box:hover img {
+    transform: scale(1.1); /* Zoom agréable lors du survol */
+}
