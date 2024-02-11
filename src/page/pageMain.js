@@ -37,19 +37,7 @@ const PageMain = () => {
                 <div>
                     <ProjectComponent/>
                 </div>
-                <div>
 
-                    <aboutMeComponent/>
-                </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
-                <div>
-                    <ProjectComponent/>
-                </div>
                 <div>
                     <FormComponent/>
                 </div>
