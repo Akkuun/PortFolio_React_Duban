@@ -5,6 +5,7 @@ import NavComponent from "../component/nav-component";
 import "../style/css/pageMain.css";
 import ReactPageScroller from "react-page-scroller";
 import AboutMeComponent from "../component/about-me-component";
+import FormComponent  from "../component/FormComponent";
 
 const PageMain = () => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -34,6 +35,9 @@ const PageMain = () => {
                 </div>
                 <div>
                     <ProjectComponent/>
+                </div>
+                <div>
+                    <FormComponent/>
                 </div>
                 <div>
                     <ProjectComponent/>
