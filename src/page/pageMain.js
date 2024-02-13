@@ -6,6 +6,7 @@ import ReactPageScroller from "react-page-scroller";
 import AboutMeComponent from "../component/about-me-component";
 import ProjectComponent from "../component/project-component";
 import FormComponent  from "../component/FormComponent";
+import ProjectComponent_2 from "../component/project-component_2";
 
 
 const PageMain = () => {
@@ -37,7 +38,10 @@ const PageMain = () => {
                 <div>
                     <ProjectComponent/>
                 </div>
+                <div>
 
+                    <ProjectComponent_2/>
+                </div>
                 <div>
                     <FormComponent/>
                 </div>
