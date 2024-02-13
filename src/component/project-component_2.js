@@ -23,7 +23,7 @@ const ProjectComponent_2 = () => {
                     colorTitle={project.colorTitle}
                 />
             ))}
-            <div id="project-title-2">Personal projects</div> {/* Titre placé à droite */}
+            <div id="project-title-2">Personal <br/>projects</div> {/* Titre placé à droite */}
         </div>
     );
 };
