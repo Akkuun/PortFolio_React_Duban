@@ -12,7 +12,7 @@ const ProjectComponent_2 = () => {
     ];
 
     return (
-        <div className="project-container">
+        <div className="project-container2">
             {projects.map((project, index) => (
                 <ProjectItem
                     key={index}

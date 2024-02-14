@@ -14,7 +14,7 @@ const ProjectComponent = () => {
 
     return (
         <div className="project-container">
-            <div id="project-title">Personal projects</div>
+            <div id="project-title">Personal <br/> projects</div>
             {projects.map((project, index) => (
                 <ProjectItem
                     key={index}

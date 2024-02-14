@@ -43,6 +43,7 @@
 #project-title{
     color: white;
     font-size: 9vh;
+    padding-top: 20%;
     display: inline;
     position: relative;
     font-family: Lexend;
@@ -57,4 +58,13 @@
     padding-top: 65%;
     transform: translateY(-50%);
     font-family: Lexend;
+}
+
+.project-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    grid-template-rows: repeat(2, 1fr); /* 2 lignes égales */
+    gap: 1%; /* Espace entre les éléments */
+    height: 95vh; /* La hauteur de la grille est égale à la hauteur de la vue */
+
 }
