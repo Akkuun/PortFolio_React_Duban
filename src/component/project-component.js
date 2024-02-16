@@ -7,9 +7,9 @@ import CDG2024 from '../style/picture/CGJ2024.png';
 
 const ProjectComponent = () => {
     const projects = [
-        { title: 'Project 1', image: CDG2024, gridColumn: 1, gridRow: 1, colorTitle: 'white' },
-        { title: 'Project 2 ', image: plante, gridColumn: 1, gridRow: 3, colorTitle: 'white' },
-        { title: 'Project 3', image: repartition, gridColumn: 2, gridRow: 3, colorTitle: 'black' },
+        { title: 'Code Game Jam 2024 C#', image: CDG2024, gridColumn: 1, gridRow: 1, colorTitle: 'white' },
+        { title: 'Mobile App Plantes managing Kotlin ', image: plante, gridColumn: 1, gridRow: 3, colorTitle: 'white'},
+        { title: 'Iot Data management project React ', image: repartition, gridColumn: 2, gridRow: 3, colorTitle: 'black' },
     ];
 
     return (
