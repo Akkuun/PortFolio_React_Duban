@@ -44,13 +44,33 @@ function App() {
             prevX = posX;
             prevY = posY;
             prevTime = currentTime;
-
+        };
+        const handleLinkHover = (e) => {
+            if (cursorOutline) {
+                cursorOutline.classList.add('large'); // Changer la taille du cercle lorsque la souris survole un lien
+            }
+        };
+        const handleLinkLeave = (e) => {
+            if (cursorOutline) {
+                cursorOutline.classList.remove('large'); // Réinitialiser la taille du cercle lorsque la souris quitte le lien
+            }
         };
 
         window.addEventListener("mousemove", handleMouseMove);
 
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', handleLinkHover);
+            link.addEventListener('mouseleave', handleLinkLeave);
+        });
+
+
+
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
+            document.querySelectorAll('a').forEach(link => {
+                link.removeEventListener('mouseenter', handleLinkHover);
+                link.removeEventListener('mouseleave', handleLinkLeave);
+            });
         };
     }, []); // Empty dependency array ensures this runs only once after initial render
 
