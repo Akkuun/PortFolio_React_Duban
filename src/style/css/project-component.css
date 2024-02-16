@@ -54,7 +54,7 @@
     font-size: 9vh;
     display: inline;
     position: absolute; /* Position absolue pour le placer à droite */
-    right: 5%; /* Ajustez la valeur pour placer le titre à l'endroit souhaité */
+    right: 9%; /* Ajustez la valeur pour placer le titre à l'endroit souhaité */
     padding-top: 65%;
     transform: translateY(-50%);
     font-family: Lexend;

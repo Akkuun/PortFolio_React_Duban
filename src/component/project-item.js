@@ -3,7 +3,7 @@
 import React from 'react';
 import '../style/css/project-item.css';
 
-const ProjectItem = ({ title, image, gridColumn, gridRow,colorTitle }) => {
+const ProjectItem = ({ title, image, gridColumn, gridRow,colorTitle, url }) => {
     const boxStyle = {
         gridColumn: `span ${gridColumn}`,
         gridRow: `span ${gridRow}`,
@@ -11,12 +11,14 @@ const ProjectItem = ({ title, image, gridColumn, gridRow,colorTitle }) => {
 
     return (
         <div className="box" style={boxStyle}>
-            <img src={image} alt={title} />
-            <div className="project-title" style={ {color : colorTitle}}>{title}</div>
+            <a href={url} target="_blank" rel="noreferrer">
+                <img src={image} alt={title}/>
+
+                <div className="project-title" style={{color: colorTitle}}>{title}</div>
+            </a>
         </div>
     );
 };
-
 
 
 export default ProjectItem;
