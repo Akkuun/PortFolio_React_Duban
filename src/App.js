@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
-import './style/css/App.css';
+import React, { useEffect, useState } from 'react';
+import './style/css/App.css'; // Assurez-vous que le chemin du fichier CSS est correct
 import PageMain from "./page/pageMain";
 
 function App() {
+    const [cursorOutline, setCursorOutline] = useState(null);
+
     useEffect(() => {
         const cursorDot = document.querySelector("[data-cursor-dot]");
-        const cursorOutline = document.querySelector("[data-cursor-outline]");
+        const cursorOutlineElement = document.querySelector("[data-cursor-outline]");
+        setCursorOutline(cursorOutlineElement);
 
         let prevX = 0;
         let prevY = 0;
@@ -47,11 +50,13 @@ function App() {
         };
         const handleLinkHover = (e) => {
             if (cursorOutline) {
+                console.log("add large")
                 cursorOutline.classList.add('large'); // Changer la taille du cercle lorsque la souris survole un lien
             }
         };
         const handleLinkLeave = (e) => {
             if (cursorOutline) {
+                console.log("remove large")
                 cursorOutline.classList.remove('large'); // Réinitialiser la taille du cercle lorsque la souris quitte le lien
             }
         };
@@ -63,8 +68,6 @@ function App() {
             link.addEventListener('mouseleave', handleLinkLeave);
         });
 
-
-
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
             document.querySelectorAll('a').forEach(link => {
@@ -72,7 +75,7 @@ function App() {
                 link.removeEventListener('mouseleave', handleLinkLeave);
             });
         };
-    }, []); // Empty dependency array ensures this runs only once after initial render
+    }, [cursorOutline]); // Empty dependency array ensures this runs only once after initial render
 
     return (
 
