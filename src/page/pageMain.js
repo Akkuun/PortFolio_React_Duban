@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import HeaderComponent from "../component/HeaderComponent";
-import NavComponent from "../component/nav-component";
 import "../style/css/pageMain.css";
 import ReactPageScroller from "react-page-scroller";
 import AboutMeComponent from "../component/about-me-component";
@@ -29,7 +28,6 @@ const PageMain = () => {
                 customPageNumber={currentPage}
             >
                 <div>
-                    <NavComponent/>
                     <HeaderComponent/>
                 </div>
                 <div>
