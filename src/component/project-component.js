@@ -7,14 +7,14 @@ import CDG2024 from '../style/picture/CGJ2024.png';
 
 const ProjectComponent = () => {
     const projects = [
-        { title: 'Project 1', image: CDG2024, gridColumn: 1, gridRow: 1, colorTitle: 'white' },
-        { title: 'Project 2 ', image: plante, gridColumn: 1, gridRow: 3, colorTitle: 'white' },
-        { title: 'Project 3', image: repartition, gridColumn: 2, gridRow: 3, colorTitle: 'black' },
+        { title: 'Code Game Jam 2024 C#', image: CDG2024, gridColumn: 1, gridRow: 1, colorTitle: 'white', url: 'https://github.com/Akkuun/Code_Game_Jam_2024'},
+        { title: 'Mobile App Plantes managing Kotlin ', image: plante, gridColumn: 1, gridRow: 3, colorTitle: 'white', url  : 'https://github.com/Akkuun/Plante_Managin_App_Kotlin'},
+        { title: 'Iot Data management project React ', image: repartition, gridColumn: 2, gridRow: 3, colorTitle: 'black', url: 'https://github.com/Akkuun/ProjetReactAlternance2022' },
     ];
 
     return (
         <div className="project-container">
-            <div id="project-title">Personal projects</div>
+            <div id="project-title">Personal <br/> projects</div>
             {projects.map((project, index) => (
                 <ProjectItem
                     key={index}
@@ -23,6 +23,7 @@ const ProjectComponent = () => {
                     gridColumn={project.gridColumn}
                     gridRow={project.gridRow}
                     colorTitle={project.colorTitle}
+                    url={project.url}
                 />
             ))}
         </div>
