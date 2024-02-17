@@ -20,13 +20,13 @@ html{
 
 }
 .cursor-outline.large {
-    width: 3%; /* ou toute autre taille souhaitée */
-    height: 6%; /* ou toute autre taille souhaitée */
+    width: 8%; /* ou toute autre taille souhaitée */
+    height: 8%; /* ou toute autre taille souhaitée */
 }
 
 .cursor-outline{
-    width: 35px;
-    height: 35px;
+    width: 2%;
+    height: 4%;
     border: 1px solid hsla(0, 0%, 100%, 0.37);
     transition: left 0.3s ease-out, top 0.3s ease-out;
     background-color: rgb(128, 128, 128, 0.1);
