@@ -12,7 +12,7 @@
     /*border: red dotted;*/
     height: 100vh;
 }
-#WhiteH4Title {
+.WhiteH4Title {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     animation-delay: 1s;
@@ -23,7 +23,7 @@
     margin-top: 0%;
     font-size: 4vh;
 }
-#GreyH5Text {
+.GreyH5Text {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     animation-delay: 1s;
@@ -44,7 +44,7 @@
 #contact {
     padding-bottom: 20%;
 }
-#ContactTitle {
+.PageTitle {
     opacity: 0;
     transition: opacity 5s ease-in-out;
     animation-delay: 5s;

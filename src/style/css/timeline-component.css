@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
+}
+
+
+.timeline-component {
+    text-align: left;
+    font-family: Lexend;
+    display: flex;
+    padding-left: 5%;
+    /*border: red dotted;*/
+    height: 100vh;
+}
