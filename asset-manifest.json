@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PortFolio_React_Duban/static/css/main.9354ed07.css",
-    "main.js": "/PortFolio_React_Duban/static/js/main.38c64f6c.js",
+    "main.css": "/PortFolio_React_Duban/static/css/main.c812c458.css",
+    "main.js": "/PortFolio_React_Duban/static/js/main.bf23ba09.js",
     "static/js/787.bee8839b.chunk.js": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js",
     "static/media/picture_about_me.PNG": "/PortFolio_React_Duban/static/media/picture_about_me.9421d409f7f1547eac48.PNG",
     "static/media/repartition.png": "/PortFolio_React_Duban/static/media/repartition.c248e3e95d30009db246.png",
     "static/media/plante.jpg": "/PortFolio_React_Duban/static/media/plante.0bc804aa1f1976d1e969.jpg",
     "static/media/CGJ20222.png": "/PortFolio_React_Duban/static/media/CGJ20222.9bfced3cbd30dc64313e.png",
-    "static/media/site.png": "/PortFolio_React_Duban/static/media/site.724017feebf225db3d6c.png",
-    "static/media/Friendly.png": "/PortFolio_React_Duban/static/media/Friendly.5da213f4acffadebac24.png",
+    "static/media/site_2.png": "/PortFolio_React_Duban/static/media/site_2.79c604102005ee229541.png",
     "static/media/CGJ2024.png": "/PortFolio_React_Duban/static/media/CGJ2024.ffda7eb52f38a1a2db76.png",
+    "static/media/Friendly.png": "/PortFolio_React_Duban/static/media/Friendly.85b065804a9c792ee885.png",
     "static/media/Lexend-Regular.ttf": "/PortFolio_React_Duban/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
     "static/media/mail.png": "/PortFolio_React_Duban/static/media/mail.e4bec7c9a337d3b7f3ec.png",
     "static/media/mailHover.png": "/PortFolio_React_Duban/static/media/mailHover.90bfb59e29a3e62370b2.png",
@@ -17,12 +17,12 @@
     "static/media/back-to-top_button.svg": "/PortFolio_React_Duban/static/media/back-to-top_button.34cc3421a542144eea6836fb6bdea5a8.svg",
     "static/media/back-to-top_button_hover.svg": "/PortFolio_React_Duban/static/media/back-to-top_button_hover.b45ca94a4bc25984de9aae5fe3893979.svg",
     "index.html": "/PortFolio_React_Duban/index.html",
-    "main.9354ed07.css.map": "/PortFolio_React_Duban/static/css/main.9354ed07.css.map",
-    "main.38c64f6c.js.map": "/PortFolio_React_Duban/static/js/main.38c64f6c.js.map",
+    "main.c812c458.css.map": "/PortFolio_React_Duban/static/css/main.c812c458.css.map",
+    "main.bf23ba09.js.map": "/PortFolio_React_Duban/static/js/main.bf23ba09.js.map",
     "787.bee8839b.chunk.js.map": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9354ed07.css",
-    "static/js/main.38c64f6c.js"
+    "static/css/main.c812c458.css",
+    "static/js/main.bf23ba09.js"
   ]
 }
