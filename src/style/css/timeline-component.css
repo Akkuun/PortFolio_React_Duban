@@ -3,12 +3,92 @@
     src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
 }
 
-
 .timeline-component {
     text-align: left;
     font-family: Lexend;
     display: flex;
+    flex-direction: column;
     padding-left: 5%;
-    /*border: red dotted;*/
+    padding-right: 5%;
     height: 100vh;
 }
+#timelineTitle {
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+
+.horizontal-stepper {
+    background: transparent;
+    width: 200%;
+    border: blue dotted;
+}
+.horizontal-stepper .MuiStepConnector-alternativeLabel {
+   top: 20%;
+   left: calc(-75% +12px);
+   right: calc(75% +12px);
+   /*position: absolute;*/
+   color: white;
+   border-top: 1px solid white;
+}
+  
+.horizontal-stepper .MuiStepConnector-line {
+  border-color: white;
+  border-top-width: 1px;
+}
+
+.horizontal-stepper .MuiStepIcon-root:first-child {
+  color: white;
+}
+
+.horizontal-stepper .MuiStepLabel-label:first-child {
+    color: white;
+}
+
+.horizontal-stepper .MuiStepLabel-root:nth-child(1) .MuiStepLabel-label {
+    position: relative;
+}
+
+.horizontal-scroll {
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+/*
+.horizontal-stepper #test1 {
+    content: 'Step 1';
+    color:white;
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}*/
+
+/*
+.horizontal-stepper .MuiStepLabel-root:nth-child(1)::before {
+    content: 'Step 1';
+    color:white;
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+ /* .horizontal-stepper .MuiStepLabel-root:nth-child(2)::after {
+    content: 'Step 2';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }*/
+  
