@@ -14,20 +14,17 @@
 }
 #timelineTitle {
     margin-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 20%;
+    padding-top: 2.5%;
+    /*padding-bottom: 20%;*/
 }
 
 .horizontal-stepper {
     background: transparent;
     width: 200%;
-    border: blue dotted;
 }
 .horizontal-stepper .MuiStepConnector-alternativeLabel {
-   top: 20%;
-   left: calc(-75% +12px);
-   right: calc(75% +12px);
-   /*position: absolute;*/
+   left: calc(-50% +12px);
+   right: calc(50% +12px);
    color: white;
    border-top: 1px solid white;
 }
@@ -51,15 +48,73 @@
 
 .horizontal-scroll {
     overflow-x: auto;
-    width: 100%;
-    white-space: nowrap;
+    /* /*white-space: nowrap;* */
     scrollbar-width: none;
     -ms-overflow-style: none;
+    height: 50%;
+    width: 100%;
+    padding-top: 25%;
+    border: blue dotted;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
     display: none;
-  }
+}
+
+/*
+.stepLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+.stepTitle {
+    width: 40%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: rgb(255, 255, 255);
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 3vh;
+
+    border: purple dotted;
+}
+
+.stepDate {
+    width: 40%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: rgb(141, 141, 141);
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 3vh;
+
+    border: pink dotted;
+}
+
+.stepText {
+    width: 40%;
+    overflow-wrap: break-word;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: rgb(255, 255, 255);
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 2vh;
+
+    border: red dotted;
+}
+
+
 
 /*
 .horizontal-stepper #test1 {

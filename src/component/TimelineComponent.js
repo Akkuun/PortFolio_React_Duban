@@ -10,11 +10,16 @@ const TimelineComponent = () => {
                 <h1 className="PageTitle"> Studies and experiences</h1>
             </div>
 
-            <div id="timelineBody">
+            
+
             <div className="horizontal-scroll">
                 <Stepper className="horizontal-stepper" alternativeLabel connector={<StepConnector />}>
                     <Step>
-                        <StepLabel id="test1">Bac STI2D</StepLabel>
+                        <StepLabel /*className="stepLabel"*/>
+                            <h4 className = "stepTitle">Bac STI2D</h4>
+                            <h5 className = "stepDate">2019</h5>
+                            <h5 className = "stepText">J'ai réalisé un bac STI2D balblabalbalablablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaouuuuuuuuuuuuuuuuuuuuu</h5>
+                        </StepLabel>
                     </Step>
                     <Step>
                         <StepLabel className="stepStyle">Step 2</StepLabel>
@@ -39,7 +44,6 @@ const TimelineComponent = () => {
                     </Step>
                 </Stepper>
                 </div>
-            </div>
         </div>
         );
     };
