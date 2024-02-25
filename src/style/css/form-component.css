@@ -86,9 +86,10 @@
     transition: opacity 5s ease-in-out;
     animation-delay: 5s;
     animation: fadeIn 5s ease-in-out forwards;
+
 }
 #socialIcons a {
-    padding-left: 20%;
+    padding-left: 60%;
 }
 a:hover {
     cursor: None;
