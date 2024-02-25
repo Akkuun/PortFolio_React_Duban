@@ -1,0 +1,37 @@
+.App{
+    text-align: center;
+    background-color: #130E16;
+    height: auto;
+    user-select: None;
+}
+body{
+    cursor: none;
+}
+html{
+    background-color: #130E16;
+    cursor: none;
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+    cursor: none;
+}
+/* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
+/*::-webkit-scrollbar {*/
+/*    width: 8px; !* Largeur de la barre de défilement *!*/
+/*    height: 8px; !* Hauteur de la barre de défilement *!*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+/*    background-color: #888; !* Couleur de la poignée de défilement *!*/
+/*    border-radius: 4px; !* Arrondi de la poignée de défilement *!*/
+/*}*/
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}

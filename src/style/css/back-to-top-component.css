@@ -1,0 +1,35 @@
+#back-to-top-button{
+    position: fixed;
+}
+
+#back-to-top-section {
+
+
+    color: white;
+}
+#back-to-top-section > img {
+    height: 6%;
+    width: 6%;
+    position: absolute;
+    z-index: 45;
+    left: 45%;
+    top: 85%;
+    rotate: 180deg;
+    opacity: 0.5;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+}
+
+#back-to-top-section > a {
+    cursor: None;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}

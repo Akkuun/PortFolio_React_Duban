@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
+}
+
+#aboutmecomponent{
+    color: grey;
+}
+#text_me{
+    font-size: 9vh;
+    font-family: Lexend;
+    padding-top: 10%;
+    color: white;
+}

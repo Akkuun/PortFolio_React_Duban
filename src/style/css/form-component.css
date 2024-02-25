@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
+}
+
+
+.form-component {
+    text-align: left;
+    font-family: Lexend;
+    display: flex;
+    padding-left: 5%;
+    /*border: red dotted;*/
+    height: 100vh;
+}
+.WhiteH4Title {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: white;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 4vh;
+}
+.GreyH5Text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: grey;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 3vh;
+}
+
+
+#contactAndSocial {
+    margin-right: 10%;
+    padding-top: 5%;
+}
+#contact {
+    padding-bottom: 20%;
+}
+.PageTitle {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    animation-delay: 5s;
+    animation: fadeIn 5s ease-in-out forwards;
+    color: white;
+    font-size: 9vh;
+    display: inline;
+    position: relative;
+}
+#Touch {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: #804abe;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 4vh;
+}
+#phoneNumber {
+    text-align: justify;
+    padding-bottom: 20%;
+}
+#emailAdress {
+    text-align: justify;
+    padding-bottom: 20%;
+}
+
+
+#socialIcons {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2%;
+    width: 15%;
+    padding-left: 5%;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    animation-delay: 5s;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+#socialIcons a {
+    padding-left: 20%;
+}
+a:hover {
+    cursor: None;
+}
+
+#cv {
+    padding-top: 7%;
+    margin-left: 15%;
+    text-align: justify;
+}
+
+#cvContent {
+    padding-top: 8%;
+    text-align: center;
+}
+
+#LittleSubtitle {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: #8d62be;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    font-size: 2vh;
+}
+
+#qrcode {
+    height: 100%; 
+    width: 100%;
+}
+
+#animationArrow {
+    transform: scaleX(-1) rotate(75deg);
+    height: 125%;
+    width: 125%;
+}
+
+#playerAnimation {
+    padding-top: 7%;
+}

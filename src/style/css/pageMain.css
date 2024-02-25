@@ -1,0 +1,15 @@
+.pageMain {
+    height: 100vh;
+    overflow: hidden; /* Cacher le défilement */
+   max-width: 90%;
+
+}
+
+/* Cacher la scrollbar pour les navigateurs basés sur Webkit (comme Chrome, Safari) */
+.full-height::-webkit-scrollbar {
+    display: none;
+}
+.pageMain::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}
