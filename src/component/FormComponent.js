@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import animatedArrow from '../style/gif/Animation_arrow.json';
 import QR from "../style/CV/QR.png"
+import CV from "../style/CV/CV.pdf"
 
 const FormComponent = () => {
     const [isGithubHovered_contact, setIsGithubHovered_contact] = useState(true);
@@ -92,13 +93,13 @@ const FormComponent = () => {
 
                 <div id="cvContent">
                     <h5 id="LittleSubtitle">Or clic on the link to download it here : </h5>
-                    <h5 className="GreyH5Text">linkpdf.pdf</h5>
+                    <a href={CV} download="CV_Duban.pdf"><h5 className="GreyH5Text">CV.pdf</h5></a>
                 </div>
 
             </div>
 
             <div id="playerAnimation">
-                <Player
+            <Player
                     loop autoplay src={animatedArrow}
                     className="player" id="animationArrow" speed={0.75}
                 />
