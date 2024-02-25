@@ -37,8 +37,8 @@ const FormComponent = () => {
                 </div>
 
                 <div id="emailAdress">
-                    <h4 className="WhiteH4Title">Email adress</h4>
-                    <h5 className="GreyH5Text">matougamer@gmail.com</h5>
+                    <h4 id="WhiteH4Title">Email adress</h4>
+                    <h5 id="GreyH5Text">mathisduban.pro@gmail.com</h5>
                 </div>
 
                 <div id="phoneNumber">
