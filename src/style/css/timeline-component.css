@@ -3,9 +3,9 @@
     src: url("../../font/Lexend/Lexend-Regular.ttf") format('truetype');
 }
 
+
 .timeline-component {
     text-align: left;
-    font-family: Lexend;
     display: flex;
     flex-direction: column;
     padding-left: 5%;
@@ -13,9 +13,9 @@
     height: 100vh;
 }
 #timelineTitle {
+    font-family: 'Lexend';
     margin-right: 10%;
     padding-top: 2.5%;
-    /*padding-bottom: 20%;*/
 }
 
 .horizontal-stepper {
@@ -48,102 +48,45 @@
 
 .horizontal-scroll {
     overflow-x: auto;
-    /* /*white-space: nowrap;* */
     scrollbar-width: none;
     -ms-overflow-style: none;
     height: 50%;
     width: 100%;
     padding-top: 25%;
-    border: blue dotted;
 }
 
 .horizontal-scroll::-webkit-scrollbar {
     display: none;
 }
 
-/*
-.stepLabel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
+.stepLabelBottom {
+    text-align: center;
+    font-family: 'Lexend';
+}
 
 .stepTitle {
-    width: 40%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    animation-delay: 1s;
-    animation: fadeIn 1s ease-in-out forwards;
-    color: rgb(255, 255, 255);
-    margin-left: 1%;
-    margin-bottom: 1%;
-    margin-top: 0%;
     font-size: 3vh;
-
-    border: purple dotted;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
 .stepDate {
-    width: 40%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    animation-delay: 1s;
-    animation: fadeIn 1s ease-in-out forwards;
-    color: rgb(141, 141, 141);
-    margin-left: 1%;
-    margin-bottom: 1%;
-    margin-top: 0%;
-    font-size: 3vh;
-
-    border: pink dotted;
-}
-
-.stepText {
-    width: 40%;
-    overflow-wrap: break-word;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    animation-delay: 1s;
-    animation: fadeIn 1s ease-in-out forwards;
-    color: rgb(255, 255, 255);
-    margin-left: 1%;
-    margin-bottom: 1%;
-    margin-top: 0%;
+    color: rgb(175, 174, 174);
     font-size: 2vh;
-
-    border: red dotted;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
+.StepDescription {
+    font-size: 2vh;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
 
-
-/*
-.horizontal-stepper #test1 {
-    content: 'Step 1';
-    color:white;
-    display: block;
+.stepLabelTop {
+    text-align: center;
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-}*/
-
-/*
-.horizontal-stepper .MuiStepLabel-root:nth-child(1)::before {
-    content: 'Step 1';
-    color:white;
-    display: block;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
- /* .horizontal-stepper .MuiStepLabel-root:nth-child(2)::after {
-    content: 'Step 2';
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }*/
-  
+    top: -250px;
+    width: 100%;
+    font-family: 'Lexend';
+}
