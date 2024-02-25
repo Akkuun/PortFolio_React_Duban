@@ -32,7 +32,7 @@ const FormComponent = () => {
 
             <div id="contactAndSocial">
                 <div id="contact">
-                    <h1 id="ContactTitle"> Contact</h1>
+                    <h1 className="PageTitle"> Contact</h1>
                     <h4 id="Touch">Get in touch</h4>
                 </div>
 
@@ -42,8 +42,8 @@ const FormComponent = () => {
                 </div>
 
                 <div id="phoneNumber">
-                    <h4 id="WhiteH4Title">Phone number</h4>
-                    <h5 id="GreyH5Text">+0600000000</h5>
+                    <h4 className="WhiteH4Title">Phone number</h4>
+                    <h5 className="GreyH5Text">+0600000000</h5>
                 </div>
 
                 <div>
@@ -61,7 +61,7 @@ const FormComponent = () => {
             </div>
         
             <div id="cv">
-                <h4 id="WhiteH4Title">CV</h4>
+                <h4 className="WhiteH4Title">CV</h4>
 
                 <div id="cvContent">
                     <h5 id="LittleSubtitle">Scan the QR code to download my CV : </h5>
@@ -70,7 +70,7 @@ const FormComponent = () => {
 
                 <div id="cvContent">
                     <h5 id="LittleSubtitle">Or clic on the link to download it here : </h5>
-                    <h5 id="GreyH5Text">linkpdf.pdf</h5>
+                    <h5 className="GreyH5Text">linkpdf.pdf</h5>
                 </div>
 
             </div>
