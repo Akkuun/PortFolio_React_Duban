@@ -1,7 +1,6 @@
 import "../style/css/timeline-component.css";
-import { Stepper, Step, StepLabel, StepConnector, Typography } from '@mui/material';
+import { Stepper, Step, StepLabel, StepConnector} from '@mui/material';
 import * as React from 'react';
-import github from "../style/picture/school.png";
 
 const TimelineComponent = () => {
     const steps = [
