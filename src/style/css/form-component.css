@@ -119,14 +119,16 @@ a:hover {
 }
 
 #qrcode {
-    height: 100%; 
-    width: 100%;
+    height: 30%;
+    width: 30%;
 }
 
 #animationArrow {
     transform: scaleX(-1) rotate(75deg);
-    height: 125%;
-    width: 125%;
+    height: 30%;
+    width: 30%;
+    left: 75%;
+    position: absolute;
 }
 
 #playerAnimation {

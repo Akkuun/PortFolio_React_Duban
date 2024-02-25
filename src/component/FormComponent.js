@@ -4,9 +4,9 @@ import linkedin from "../style/picture/linkedin.png";
 import github_hover from "../style/picture/githubHover.png";
 import linkedin_hover from "../style/picture/linkedinHover.png";
 import React, { useState } from 'react';
-import qrcode from "../style/picture/QRcode.png";
 import { Player } from '@lottiefiles/react-lottie-player';
 import animatedArrow from '../style/gif/Animation_arrow.json';
+import QR from "../style/CV/QR.png"
 
 const FormComponent = () => {
     const [isGithubHovered_contact, setIsGithubHovered_contact] = useState(true);
@@ -87,7 +87,7 @@ const FormComponent = () => {
 
                 <div id="cvContent">
                     <h5 id="LittleSubtitle">Scan the QR code to download my CV : </h5>
-                    <img src={qrcode} alt="qrcode" id="qrcode" />
+                    <img src={QR} alt="qrcode" id="qrcode" />
                 </div>
 
                 <div id="cvContent">
