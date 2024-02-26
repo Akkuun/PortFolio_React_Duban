@@ -15,7 +15,7 @@
 #timelineTitle {
     font-family: 'Lexend';
     margin-right: 10%;
-    padding-top: 2.5%;
+    padding-top: 5%;
 }
 
 .horizontal-stepper {
@@ -23,19 +23,19 @@
     width: 200%;
 }
 .horizontal-stepper .MuiStepConnector-alternativeLabel {
-   left: calc(-50% + 12px);
-   right: calc(50% + 12px);
-   color: white;
-   border-top: 1px solid white;
+    left: calc(-50% + 12px);
+    right: calc(50% + 12px);
+    color: white;
+    border-top: 1px solid white;
 }
-  
+
 .horizontal-stepper .MuiStepConnector-line {
-  border-color: white;
-  border-top-width: 1px;
+    border-color: white;
+    border-top-width: 1px;
 }
 
 .horizontal-stepper .MuiStepIcon-root:first-child {
-  color: white;
+    color: white;
 }
 
 .horizontal-stepper .MuiStepLabel-label:first-child {
@@ -59,15 +59,22 @@
     display: none;
 }
 
+.scroll-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .stepLabelBottom {
     text-align: center;
     font-family: 'Lexend';
+    padding-top: 5%;
 }
 
 .stepTitle {
     font-size: 3vh;
     margin-bottom: 0%;
-    margin-top: 0%;
+    margin-top: -5%;
 }
 
 .stepDate {
@@ -86,7 +93,12 @@
 .stepLabelTop {
     text-align: center;
     position: absolute;
-    top: -250px;
+    /*top: -350px; !* Ajustez cette valeur selon vos besoins *!*/
+    top: -180%;
     width: 100%;
     font-family: 'Lexend';
+}
+.large-height .stepLabelTop {
+    top: -170%;
+    border: green dotted;
 }
