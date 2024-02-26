@@ -19,6 +19,7 @@
 
 }
 #droite > img {
+    cursor: none;
     left: 85%;
     top: 250%;
     height: 10%;

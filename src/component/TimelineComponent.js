@@ -46,11 +46,12 @@ const TimelineComponent = () => {
                 </Stepper>
             </div>
             <div className="scroll-buttons">
-                <a > <TimeLineArrow  idArrow={"gauche"}/></a>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a onClick={() => handleScroll(-450)}> <TimeLineArrow  idArrow={"gauche"}/></a>
 
-                <a><TimeLineArrow  idArrow={"droite"}/></a>
-                <button onClick={() => handleScroll(-300)}>Scroll Left</button>
-                <button onClick={() => handleScroll(300)}>Scroll Right</button>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a onClick={() => handleScroll(450)}><TimeLineArrow  idArrow={"droite"}/></a>
+
             </div>
         </div>
     );
