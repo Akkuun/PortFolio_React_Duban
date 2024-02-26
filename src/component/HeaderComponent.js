@@ -65,9 +65,11 @@ const HeaderComponent = () => {
                         sequence={[
                             'I am a passionate developer',
                             1000,
-                            'I love learn new technologies',
+                            'I am interested in 3D and pictures manipulation',
                             1000,
-                            'I use DevOps tools and methods',
+                            'I create websites and applications',
+                            1000,
+                            'I create video games with Unity',
                             1000,
                         ]}
                         wrapper="span"
