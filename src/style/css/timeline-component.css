@@ -5,7 +5,6 @@
 
 
 .timeline-component {
-    cursor: none;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@
 #timelineTitle {
     font-family: 'Lexend';
     margin-right: 10%;
-    padding-top: 2.5%;
+    padding-top: 5%;
 }
 
 .horizontal-stepper {
@@ -24,7 +23,6 @@
     width: 200%;
 }
 .horizontal-stepper .MuiStepConnector-alternativeLabel {
-    cursor: none;
     left: calc(-50% + 12px);
     right: calc(50% + 12px);
     color: white;
@@ -32,28 +30,20 @@
 }
 
 .horizontal-stepper .MuiStepConnector-line {
-    cursor: none;
-
     border-color: white;
     border-top-width: 1px;
 }
 
 .horizontal-stepper .MuiStepIcon-root:first-child {
-    cursor: none;
-
     color: white;
 }
 
 .horizontal-stepper .MuiStepLabel-label:first-child {
-    cursor: none;
-
     color: white;
 }
 
 .horizontal-stepper .MuiStepLabel-root:nth-child(1) .MuiStepLabel-label {
     position: relative;
-    cursor: none;
-
 }
 
 .horizontal-scroll {
@@ -76,23 +66,18 @@
 }
 
 .stepLabelBottom {
-    cursor: none;
-
     text-align: center;
     font-family: 'Lexend';
+    padding-top: 5%;
 }
 
 .stepTitle {
-    cursor: none;
-
     font-size: 3vh;
     margin-bottom: 0%;
-    margin-top: 0%;
+    margin-top: -5%;
 }
 
 .stepDate {
-    cursor: none;
-
     color: rgb(175, 174, 174);
     font-size: 2vh;
     margin-bottom: 0%;
@@ -100,19 +85,20 @@
 }
 
 .StepDescription {
-    cursor: none;
-
     font-size: 2vh;
     margin-bottom: 0%;
     margin-top: 0%;
 }
 
 .stepLabelTop {
-    cursor: none;
-
     text-align: center;
     position: absolute;
-    top: -250px;
+    /*top: -350px; !* Ajustez cette valeur selon vos besoins *!*/
+    top: -180%;
     width: 100%;
     font-family: 'Lexend';
+}
+.large-height .stepLabelTop {
+    top: -170%;
+    border: green dotted;
 }
