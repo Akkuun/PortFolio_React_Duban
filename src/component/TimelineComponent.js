@@ -1,6 +1,7 @@
 import "../style/css/timeline-component.css";
 import { Stepper, Step, StepLabel, StepConnector} from '@mui/material';
 import * as React from 'react';
+import TimeLineArrow from "./TimeLineArrow";
 
 const TimelineComponent = () => {
     const steps = [
@@ -45,6 +46,9 @@ const TimelineComponent = () => {
                 </Stepper>
             </div>
             <div className="scroll-buttons">
+                <a > <TimeLineArrow  idArrow={"gauche"}/></a>
+
+                <a><TimeLineArrow  idArrow={"droite"}/></a>
                 <button onClick={() => handleScroll(-300)}>Scroll Left</button>
                 <button onClick={() => handleScroll(300)}>Scroll Right</button>
             </div>
