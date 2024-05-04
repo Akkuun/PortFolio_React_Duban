@@ -57,6 +57,7 @@ const FormComponent = () => {
                     <h4 id="Touch">Get in touch</h4>
                 </div>
 
+
                 <div id="emailAdress">
                     <h4 className="WhiteH4Title">Email adress</h4>
                     <a><h5 className="GreyH5Text" onClick={copyEmailToClipboard}>mathisduban.pro@gmail.com</h5>
@@ -65,7 +66,7 @@ const FormComponent = () => {
 
                 <div id="phoneNumber">
                     <h4 className="WhiteH4Title">Phone number</h4>
-                    <a><h5 className="GreyH5Text" onClick={copyPhoneNumberToClipboard}>+0618613473</h5>
+                    <a><h5 className="GreyH5Text" onClick={copyPhoneNumberToClipboard}>+33618613473</h5>
                         {isCopiedPhone && <h5 className={"GreyH5Text"}>Copied to clipboard!</h5>}</a>
                 </div>
 
