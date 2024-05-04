@@ -92,7 +92,7 @@ const HeaderComponent = () => {
                     <img src={isLinkedinHovered ? linkedin : linkedin_hover} onMouseEnter={handleLinkedinLeave}
                          onMouseLeave={handleLinkedinHover} alt="github" id="linkin-logo" height="50px" width="50px"/>
                 </a>
-                <a href={"mailto:mathisduban.pro@gmail.fr"} target="_blank">
+                <a href={"mailto:mathisduban.pro@gmail.com"} target="_blank">
                     <img src={isMailHovered? mail : mailHover} onMouseEnter={handleMailLeave}
                          onMouseLeave={handleMailHover} alt="github" id="linkin-logo" height="55px" width="55px"/>
                 </a>
