@@ -8,11 +8,7 @@ import PageMain from "./page/pageMain";
 function App() {
 
     return (
-
-
-
             <PageMain />
-
     );
 }
 
