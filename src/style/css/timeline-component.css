@@ -114,3 +114,11 @@
  .stepDescription {
     color : #804abe;
 }
+
+#step-2 .stepLabelTop {
+    margin-top: -7.5%; /* Ajustez cette valeur selon le besoin pour aligner le texte */
+}
+
+#step-0 .stepDescription {
+    margin-bottom: 1%; /* Réduit l'espace en dessous de la description */
+}
