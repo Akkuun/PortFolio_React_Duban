@@ -23,6 +23,7 @@ const TimeLineArrow = ({idArrow}) => {
                 style={{
                     // transform: isBackToTopHovered ? 'none' : 'rotate(180deg)',
                     transition: 'transform 0.3s ease-in-out', // Ajoutez une transition pour un effet fluide
+                    cursor:'none',
                 }}
 
                 onMouseLeave={handleBackToTopLeave}
