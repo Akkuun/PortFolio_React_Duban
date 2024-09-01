@@ -93,7 +93,7 @@ const FormComponent = () => {
                 </div>
 
                 <div id="cvContent">
-                    <h5 id="LittleSubtitle">Or clic on the link to download it here : </h5>
+                    <h5 id="LittleSubtitle">Or click on the link to download it here : </h5>
                     <a href={CV} download="CV_Duban.pdf"><h5 className="GreyH5Text">CV.pdf</h5></a>
                 </div>
 

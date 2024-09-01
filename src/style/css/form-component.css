@@ -101,6 +101,10 @@ a:hover {
     text-align: justify;
 }
 
+#cv h4 {
+   margin-left: 45%;
+}
+
 #cvContent {
     padding-top: 8%;
     text-align: center;
