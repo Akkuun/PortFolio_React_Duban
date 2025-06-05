@@ -17,7 +17,7 @@ const ProjectComponent_3 = () => {
         {
             title: 'Code Game Jam 2022 C#',
             image: CGJ2022,
-            gridColumn: '1 / span 1',
+            gridColumn: '2 / span 1',
             gridRow: '1 / span 2', // Uniquement en bas
             colorTitle: 'white',
             url: 'https://github.com/Akkuun/CodeGameJam2022'
