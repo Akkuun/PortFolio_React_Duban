@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortFolio_React_Duban/static/css/main.04a6badb.css",
-    "main.js": "/PortFolio_React_Duban/static/js/main.3d5773b8.js",
+    "main.js": "/PortFolio_React_Duban/static/js/main.f0eae9eb.js",
     "static/js/787.bee8839b.chunk.js": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js",
     "static/media/CV.pdf": "/PortFolio_React_Duban/static/media/CV.ff3b8eecc1255d38e826.pdf",
     "static/media/multiBoule.png": "/PortFolio_React_Duban/static/media/multiBoule.49c120f7222afe803532.png",
@@ -30,11 +30,11 @@
     "static/media/back-to-top_button.svg": "/PortFolio_React_Duban/static/media/back-to-top_button.3f7a09d26cad24a6acc8259e70c81f6c.svg",
     "index.html": "/PortFolio_React_Duban/index.html",
     "main.04a6badb.css.map": "/PortFolio_React_Duban/static/css/main.04a6badb.css.map",
-    "main.3d5773b8.js.map": "/PortFolio_React_Duban/static/js/main.3d5773b8.js.map",
+    "main.f0eae9eb.js.map": "/PortFolio_React_Duban/static/js/main.f0eae9eb.js.map",
     "787.bee8839b.chunk.js.map": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04a6badb.css",
-    "static/js/main.3d5773b8.js"
+    "static/js/main.f0eae9eb.js"
   ]
 }
