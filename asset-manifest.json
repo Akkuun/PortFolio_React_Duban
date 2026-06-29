@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/PortFolio_React_Duban/static/css/main.8923a6bd.css",
-    "main.js": "/PortFolio_React_Duban/static/js/main.9bc650d6.js",
+    "main.css": "/PortFolio_React_Duban/static/css/main.04a6badb.css",
+    "main.js": "/PortFolio_React_Duban/static/js/main.3d5773b8.js",
     "static/js/787.bee8839b.chunk.js": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js",
+    "static/media/CV.pdf": "/PortFolio_React_Duban/static/media/CV.ff3b8eecc1255d38e826.pdf",
+    "static/media/multiBoule.png": "/PortFolio_React_Duban/static/media/multiBoule.49c120f7222afe803532.png",
     "static/media/repartition.png": "/PortFolio_React_Duban/static/media/repartition.c248e3e95d30009db246.png",
     "static/media/raytracing.png": "/PortFolio_React_Duban/static/media/raytracing.8531f982e1e9331c6830.png",
     "static/media/picture_about_me.PNG": "/PortFolio_React_Duban/static/media/picture_about_me.473c65e94bddc052a063.PNG",
     "static/media/plante.jpg": "/PortFolio_React_Duban/static/media/plante.0bc804aa1f1976d1e969.jpg",
     "static/media/ecoPlant.png": "/PortFolio_React_Duban/static/media/ecoPlant.63ab5eed2542a7638918.png",
     "static/media/minecraft.png": "/PortFolio_React_Duban/static/media/minecraft.123490b77e029a0651ca.png",
+    "static/media/plantclim.png": "/PortFolio_React_Duban/static/media/plantclim.d63cb6c9a7e60db7896c.png",
     "static/media/CGJ20222.png": "/PortFolio_React_Duban/static/media/CGJ20222.9bfced3cbd30dc64313e.png",
     "static/media/site_2.png": "/PortFolio_React_Duban/static/media/site_2.79c604102005ee229541.png",
     "static/media/CGJ2024.png": "/PortFolio_React_Duban/static/media/CGJ2024.ffda7eb52f38a1a2db76.png",
     "static/media/Friendly.png": "/PortFolio_React_Duban/static/media/Friendly.85b065804a9c792ee885.png",
-    "static/media/CV.pdf": "/PortFolio_React_Duban/static/media/CV.7f21a77d85eb9a876bbb.pdf",
+    "static/media/pixop.png": "/PortFolio_React_Duban/static/media/pixop.ba9c84931ca6a6317e69.png",
+    "static/media/CVImage.png": "/PortFolio_React_Duban/static/media/CVImage.8764d9aa36a34650931a.png",
     "static/media/slic.jpg": "/PortFolio_React_Duban/static/media/slic.84a3eb29de3eadcee746.jpg",
     "static/media/QR.png": "/PortFolio_React_Duban/static/media/QR.c4d85bc31bb503b74b7f.png",
     "static/media/Lexend-Regular.ttf": "/PortFolio_React_Duban/static/media/Lexend-Regular.6da6431a76b62006dd10.ttf",
@@ -25,12 +29,12 @@
     "static/media/back-to-top_button_hover.svg": "/PortFolio_React_Duban/static/media/back-to-top_button_hover.b45ca94a4bc25984de9aae5fe3893979.svg",
     "static/media/back-to-top_button.svg": "/PortFolio_React_Duban/static/media/back-to-top_button.3f7a09d26cad24a6acc8259e70c81f6c.svg",
     "index.html": "/PortFolio_React_Duban/index.html",
-    "main.8923a6bd.css.map": "/PortFolio_React_Duban/static/css/main.8923a6bd.css.map",
-    "main.9bc650d6.js.map": "/PortFolio_React_Duban/static/js/main.9bc650d6.js.map",
+    "main.04a6badb.css.map": "/PortFolio_React_Duban/static/css/main.04a6badb.css.map",
+    "main.3d5773b8.js.map": "/PortFolio_React_Duban/static/js/main.3d5773b8.js.map",
     "787.bee8839b.chunk.js.map": "/PortFolio_React_Duban/static/js/787.bee8839b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8923a6bd.css",
-    "static/js/main.9bc650d6.js"
+    "static/css/main.04a6badb.css",
+    "static/js/main.3d5773b8.js"
   ]
 }
