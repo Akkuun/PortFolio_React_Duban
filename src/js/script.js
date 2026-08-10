@@ -65,3 +65,34 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+const seeMoreButton = document.getElementById("see-more");
+const projectContainer = document.getElementById("projects");
+
+seeMoreButton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  projectContainer.classList.toggle("show-more");
+
+  if (projectContainer.classList.contains("show-more")) {
+    seeMoreButton.innerHTML = 'See Less <i class="fas fa-arrow-up"></i>';
+  } else {
+    seeMoreButton.innerHTML = 'See More <i class="fas fa-arrow-right"></i>';
+  }
+});
+
+const contactLink = document.querySelector('.nav-link[href="#contact"]');
+const contactEmail = document.querySelector(".contact-email");
+
+contactLink.addEventListener("click", () => {
+  setTimeout(() => {
+    contactEmail.classList.remove("animate-border");
+
+    // Force le navigateur à relancer l'animation
+    void contactEmail.offsetWidth;
+
+    contactEmail.classList.add("animate-border");
+  }, 300);
+});
+
+

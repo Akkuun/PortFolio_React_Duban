@@ -1,0 +1,239 @@
+{
+  "project1": {
+    "title": "Realtime GPU Raytracing",
+    "subtitle": "Real-time ray tracing engine with C++/Qt6 and OpenCL",
+    "video": "https://www.youtube.com/watch?v=x2sxB05pIts",
+    "description": "A real-time ray tracing engine developed in C++/Qt6 and OpenCL, designed to leverage GPU computing for rendering while remaining compatible with both AMD and NVIDIA graphics cards. The project implements a GPU-based ray tracing pipeline with an interactive Qt6 interface for controlling the engine, managing scenes and navigating through the rendered environment. It also includes camera controls, project saving, undo/redo functionality and various scene management tools. This project provided hands-on experience with low-level graphics programming, GPU computation, rendering pipelines and cross-vendor GPU development.",
+    "tools": "C++/Qt6 ; OpenCL ; CMake",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/RaytracingEngine"],
+    "images": [
+      "assets/detail/project1/minecraft.png",
+      "assets/detail/project1/boule2.png",
+      "assets/detail/project1/cornell.png",
+      "assets/detail/project1/image.png"
+    ]
+  },
+
+  "project2": {
+    "title": "PixOp",
+    "subtitle": "A serious game for learning image processing",
+    "video": "assets/project/project-two.png",
+    "description": "An educational serious game designed to teach image processing through a progressive and interactive approach. The project uses a customized node-based system allowing players to connect and combine different image processing operations to achieve a specific result. A series of increasingly challenging levels introduces and puts these operations into practice, progressively requiring the player to combine multiple techniques. The goal is to provide a hands-on learning experience where beginners can understand and master image processing operations by applying them directly.",
+    "link-titles": ["Itch", "Github"],
+    "links": ["https://github.com/Akkuun/PixOp", "https://kuurp.itch.io/pixop"],
+    "images": [
+      "assets/detail/project2/screen1.png",
+      "assets/detail/project2/screen2.png",
+      "assets/detail/project2/screen3.png",
+      "assets/detail/project2/screen4.png"
+    ]
+  },
+
+  "project3": {
+    "title": "MinerFabriquer",
+    "subtitle": "Minecraft-like game and 3D engine in C++ and OpenGL",
+    "video": "https://www.youtube.com/watch?v=J_YORM5HmL0",
+    "description": "An advanced Minecraft-like game developed from scratch in C++ and OpenGL, with a focus on building a complete real-time 3D engine. The project implements a block-based world with player movement, camera controls, inventory management, block interaction and different gameplay modes such as survival, creative and spectator. A major part of the project is its advanced procedural world generation, with numerous biomes generated from mathematical functions and configurable parameters to create distinct environments and terrain characteristics. The engine also includes chunk management, procedural terrain generation and several debugging tools such as wireframe rendering, normal visualization and AABB display. The project was developed with a strong focus on understanding and implementing the underlying systems of a real-time 3D engine.",
+    "tools": "C++ ; OpenGL ; CMake",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/MinerFabriquer"],
+    "images": [
+      "assets/detail/project3/screen1.png",
+      "assets/detail/project3/screen2.png",
+      "assets/detail/project3/screen3.png",
+      "assets/detail/project3/screen4.png",
+      "assets/detail/project3/screen5.png"
+    ]
+  },
+
+  "project4": {
+    "title": "Procedural Climbing Plant Modeling",
+    "subtitle": "Interactive procedural modeling of climbing plants based on Hädrich et al.'s method",
+    "video": "https://youtu.be/jZAtoYqygIM",
+    "description": "A research project based on the scientific paper \"Interactive Modeling and Authoring of Climbing Plants\" by T. Hädrich et al. The project implements and explores the paper's procedural method for generating and modeling climbing plants using Three.js, TypeScript and WebGL. Plants are procedurally generated and grown according to environmental constraints and growth parameters, allowing their structure to adapt to surrounding surfaces and obstacles. The project focuses on reproducing the core concepts of the scientific method while providing an interactive 3D environment to experiment with procedural plant growth and modeling.",
+    "tools": "Three.js ; TypeScript ; WebGL",
+    "link-titles": ["Github", "Paper"],
+    "links": [
+      "https://github.com/Akkuun/TER-Procedural-Climbing-Plant-Modeling",
+      "https://www.researchgate.net/publication/317749455_Interactive_Modeling_and_Authoring_of_Climbing_Plants"
+    ],
+    "images": [
+      "assets/detail/project4/screen0.png",
+      "assets/detail/project4/screen1.png",
+      "assets/detail/project4/screen2.png",
+      "assets/detail/project4/screen4.png"
+    ]
+  },
+
+  "project5": {
+    "title": "Ray Tracer",
+    "subtitle": "Advanced CPU-based ray tracing renderer in C++",
+    "video": "assets/project/project-five.png",
+    "description": "An advanced CPU-based ray tracing renderer developed from scratch in C++. The project implements a complete rendering pipeline supporting large 3D meshes through a KD-tree acceleration structure, significantly improving ray-object intersection performance. The renderer supports realistic lighting and materials, including soft shadows, reflections, refractions, high-resolution textures and normal mapping. The rendering process is also multi-threaded to take advantage of multiple CPU cores and improve rendering performance. The project focuses on implementing and optimizing the core techniques behind physically-based ray tracing while handling complex 3D scenes and high-resolution assets.",
+    "tools": "C++ ; Make ; Multithreading",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/M1_RayTracing_Duban"],
+    "images": [
+      "assets/detail/project5/screen1.png",
+      "assets/detail/project5/screen2.png",
+      "assets/detail/project5/screen3.png",
+      "assets/detail/project5/screen4.png"
+    ]
+  },
+
+  "project6": {
+    "title": "SuperPixels Image Processing",
+    "subtitle": "Image segmentation using SLICC and Mean Shift",
+    "video": "https://youtu.be/M6inbk9aiVE",
+    "description": "A C++ image processing application focused on image segmentation and superpixel generation. The project implements two segmentation approaches: SLICC for generating superpixels and Mean Shift for clustering pixels according to their spatial and color characteristics. Both algorithms are implemented from scratch, with adjustable parameters to control the resulting segmentation. The application features a graphical interface built with FLTK, the only external library used in the project, allowing users to select images, configure processing parameters, preview results and export processed images. Additional image processing features include contour generation, image compression and image format conversion, all implemented without relying on external image processing libraries.",
+    "tools": "C++ ; FLTK ; CMake",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/Super-Pixel-Project"],
+    "images": [
+      "assets/detail/project6/screen1.png",
+      "assets/detail/project6/screen2.png",
+      "assets/detail/project6/screen3.png",
+      "assets/detail/project6/screen4.png",
+      "assets/detail/project6/screen5.png",
+      "assets/detail/project6/screen6.png",
+      "assets/detail/project6/screen7.png"
+    ]
+  },
+
+  "project7": {
+    "title": "Eco-Plant",
+    "subtitle": "Mobile plant identification and management application",
+    "video": "assets/project/project-seven.png",
+    "description": "A complete Android application developed in Kotlin for identifying and managing plants. The application integrates the PlantNet API for plant identification and Firebase for backend communication and persistent data management. Each user has their own collection of plots where identified plants are stored and managed, with complete account management including profile pictures, email addresses and registration email confirmation. The application also provides a world map displaying the different plant plots recorded by users, creating a shared global database of plant observations. Photos can be selected from the device, stored and retrieved through the application, allowing users to associate their own images with identified plants. The project combines mobile development, API integration, cloud data management, user authentication, image storage and geospatial data visualization into a complete application.",
+    "tools": "Kotlin ; Android ; Firebase ; PlantNet API ; Gradle",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/Eco-Plant"],
+    "images": [
+      "assets/detail/project7/screen1.png",
+      "assets/detail/project7/screen2.png",
+      "assets/detail/project7/screen3.png",
+      "assets/detail/project7/screen4.png",
+      "assets/detail/project7/screen5.png",
+      "assets/detail/project7/screen6.png",
+      "assets/detail/project7/screen7.png"
+    ]
+  },
+
+  "project8": {
+    "title": "Friendly Foes",
+    "subtitle": "2D platformer developed during a 3-day Game Jam",
+    "video": "assets/detail/project8/screen3.png",
+    "description": "A 2D platform game developed in Unity during a 3-day Game Jam based on the theme \"Death is not the end... Death is progress.\" Working as a Gameplay Programmer within a team of four, I contributed to the implementation of the game's core gameplay systems and platforming mechanics. The game takes place in a mysterious cave where enemies are actually objects that can become allies, creating gameplay interactions around the relationship between the player and these unusual characters. The project was developed entirely from scratch under a strict time constraint, with all assets, animations and music created by the team. The game ranked 11th out of 52 entries.",
+    "tools": "Unity ; C#",
+    "link-titles": ["Github", "Itch.io", "Game Jam Page"],
+    "links": [
+      "https://github.com/Akkuun/Code_Game_Jam_Ete_2022",
+      "https://byxis.itch.io/friendly-foes",
+      "https://itch.io/jam/gdl-august-2022-jam"
+    ],
+    "images": [
+      "assets/detail/project8/screen1.png",
+      "assets/detail/project8/screen2.png",
+      "assets/detail/project8/screen3.png",
+      "assets/detail/project8/screen4.png"
+    ]
+  },
+
+  "project9": {
+    "title": "IoT Data Visualization Platform",
+    "subtitle": "Web application for visualizing IoT device data",
+    "video": "https://youtu.be/VGywUz0JT5w",
+    "description": "A professional project developed throughout my first year of apprenticeship at Watts Electronics as part of my Data Engineering engineering degree at TELECOM Saint-Étienne. The project consists of a web application for visualizing data and statistics collected from connected IoT devices and stored across Microsoft Azure cloud services. The application provides interactive data visualization and geographic representation of connected devices, with a React-based frontend and a backend/server architecture for handling data. The project also involved database management, API communication, Mapbox integration and deployment through a CI/CD pipeline.",
+    "tools": "React ; Python ; Mapbox ; Microsoft Azure ; JavaScript ; CI/CD",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/ProjetReactAlternance2022"],
+    "images": [
+      "assets/detail/project9/screen0.png",
+      "assets/detail/project9/screen1.png",
+      "assets/detail/project9/screen2.png",
+      "assets/detail/project9/screen3.png",
+      "assets/detail/project9/screen4.png"
+    ]
+  },
+
+  "project10": {
+    "title": "Legend's Souls",
+    "subtitle": "2D game developed in 36 hours for the Code Game Jam 2024",
+    "video": "https://youtu.be/p7v-IphO37U",
+    "description": "A 2D game developed from scratch in Unity during the Code Game Jam 2024 organized by the IUT of Montpellier. Our team had 36 hours to create a complete game around the theme \"Ethereal Legends\". I worked as both Project Manager and Gameplay Programmer, contributing to the development of the core gameplay systems, player interactions, exploration, summoning mechanics and puzzle systems while coordinating the project throughout the Game Jam. The game follows a Necromancer attempting to save the legend Gaia by exploring three worlds, collecting powerful souls, summoning the dead using lesser souls and solving various puzzles. The project was developed using C#, ShaderLab and HLSL, with all game assets and music created by the team. The game finished 4th out of 30 entries.",
+    "tools": "Unity ; C# ; ShaderLab ; HLSL",
+    "link-titles": ["Github", "Itch.io"],
+    "links": [
+      "https://github.com/Akkuun/Code_Game_Jam_2024",
+      "https://byxis.itch.io/legends-souls"
+    ],
+    "images": [
+      "assets/detail/project10/screen1.png",
+      "assets/detail/project10/screen2.png",
+      "assets/detail/project10/screen3.png",
+      "assets/detail/project10/screen4.png",
+      "assets/detail/project10/screen5.png"
+    ]
+  },
+
+  "project11": {
+    "title": "Candy Rush",
+    "subtitle": "Multi-agent simulation game with autonomous behaviors",
+    "video": "https://youtu.be/-sFdCl2gicE",
+    "description": "A multi-agent simulation game developed entirely in vanilla JavaScript as part of a project on agent-oriented programming. The game puts students in the role of characters who must collect as many candies as possible while avoiding the teacher. Each agent relies on autonomous behaviors and strategies to interact with the environment, pursue its objectives and react to other agents. The project also provides dedicated tools for studying and analyzing the agents during the simulation, including individual statistics, agent profiles and a heatmap visualization of the map to analyze movement and activity patterns. The game is fully playable online and combines an interactive simulation with tools for observing and understanding multi-agent behaviors.",
+    "tools": "JavaScript ; HTML ; CSS",
+    "link-titles": ["Github"],
+    "links": ["https://github.com/Akkuun/POA-SMA-TeacherProject"],
+    "images": [
+      "assets/detail/project11/screen1.png",
+      "assets/detail/project11/screen2.png",
+      "assets/detail/project11/screen3.png",
+      "assets/detail/project11/screen4.png"
+    ]
+  },
+
+  "project12": {
+    "title": "Abyss Defender",
+    "subtitle": "Cooperative 2D game developed during a 36-hour Game Jam",
+    "video": "https://youtu.be/56pb85DRW4U",
+    "description": "A cooperative 2D game developed from scratch in Unity during the Code Game Jam 2022 organized by the IUT of Montpellier. Our team had 36 hours to create a game around the theme \"Wonders of the Deep\". I worked as both Project Manager and Gameplay Programmer, contributing to the implementation of the core gameplay systems and mechanics while coordinating the project throughout the Game Jam. Players must work together to clean the ocean by collecting marine debris while managing their limited oxygen supply, finding air sources and avoiding sea urchins that consume oxygen. The game also features a progressive visual transformation of the environment as players clean the ocean. All assets and music were created by the team, and the project finished 5th out of 25 entries.",
+    "tools": "Unity ; C# ; HLSL ; ShaderLab",
+    "link-titles": ["Github", "Game"],
+    "links": [
+      "https://github.com/Akkuun/CodeGameJam2022",
+      "https://codegamejam.extragames.fr/editions-precedentes/edition-6-merveilles-des-profondeurs/projets/"
+    ],
+    "images": [
+      "assets/detail/project12/screen1.png",
+      "assets/detail/project12/screen2.png",
+      "assets/detail/project12/screen3.png",
+      "assets/detail/project12/screen4.png"
+    ]
+  },
+
+  "job1": {
+    "title": "Engine Developer (C++) Apprenticeship",
+    "subtitle": "DreamCorp",
+    "video": "assets/work/work1.png",
+    "description": "2025-2026 | Apprenticeship during the final year of my Master 2 IMAGINE (Image Processing, 3D Development and Artificial Intelligence for Graphics and Extended Reality). Software and engine development focused on real-time 3D, XR and production tools. Developed C++ applications using Unreal Engine and Qt 6/QML, including desktop applications and internal tools for production workflows. Worked on customized Unreal Engine environments for XR and LED walls, internal 3D visualization tools and Blender plugins for asset pipeline automation. The position also involved general software development, including database integration, metadata management and data processing. Contributed to R&D projects in augmented reality and spatial interactions, combining real-time rendering, software engineering and 3D technologies.",
+    "tools": "C++ ; Unreal Engine ; Blender ; Python ; XR ; AR",
+    "link-titles": ["Official Website"],
+    "links": ["https://dreamcorp.fr/"],
+    "images": []
+  },
+
+  "job2": {
+    "title": "Data Engineering Apprentice",
+    "subtitle": "Watts Electronics",
+    "video": "assets/work/work2.png",
+    "description": "2022-2023 | Apprenticeship completed as part of the first year of the Engineering Data Engineering program at Télécom Saint-Étienne. The position focused on the development of a web platform for visualizing and analyzing data collected from connected IoT devices. Developed a React-based application with a backend architecture for data processing, visualization and communication with cloud services. Worked with Microsoft Azure, databases and Mapbox to manage and visualize connected devices and their associated data. The project also involved software development practices, API integration and CI/CD, providing hands-on experience in both data engineering and full-stack development.",
+    "tools": "React ; JavaScript ; Python ; Microsoft Azure ; Mapbox ; Databases ; CI/CD",
+    "link-titles": ["Company Website", "Github"],
+    "links": [
+      "https://www.watts.eu/fr/electronics",
+      "https://github.com/Akkuun/ProjetReactAlternance2022"
+    ],
+    "images": []
+  }
+}

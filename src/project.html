@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title>Mathis Duban</title>
+  <meta name="title" content="Mathis Duban's Portfolio" />
+  <meta name="description"
+    content="My personal portfolio showcasing some of my projects done throughout the years. This site is based on a template by CommunityPro" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/CommunityPro/portfolio-html" />
+  <meta property="og:title" content="Mathis Duban's Portfolio" />
+  <meta property="og:description"
+    content="My personal portfolio showcasing some of my projects done throughout the years. This site is based on a template by CommunityPro" />
+  <meta property="og:image"
+    content="assets/sitethumbnail.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://github.com/CommunityPro/portfolio-html" />
+  <meta property="twitter:title" content="Mathis Duban's Portfolio" />
+  <meta property="twitter:description"
+    content="My personal portfolio showcasing some of my projects done throughout the years. This site is based on a template by CommunityPro" />
+  <meta property="twitter:image"
+    content="assets/sitethumbnail.jpg" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+</head>
+
+<body>
+  <header id="hero">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <h3 id="logo">
+            <a href="./">Mathis</a>
+            <br>
+            <a href="./">Duban</a>
+          </h3>
+        <!-- Navbar links -->
+        <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html#work-experiences">WORK EXPERIENCES</a></li>
+          <li><a class="nav-link" href="index.html#projects">PROJECTS</a></li>
+          <li>
+            <a class="nav-link" href="index.html#contact">CONTACT</a>
+          </li>
+          <li>
+            <a class="nav-link btn btn-primary" href="assets/CV_MATHIS_DUBAN.pdf" target="_blank">RESUME<i
+                class="fas fa-arrow-right"></i></a>
+          </li>
+
+          <!-- Toggle switch -->
+          <div class="theme-switch">
+            <input type="checkbox" id="switch" />
+            <label class="toggle-icons" for="switch">
+              <img class="moon" src="assets/moon.svg" />
+              <img class="sun" src="assets/sun.svg" />
+            </label>
+          </div>
+          <!-- Hamburger menu -->
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    console.log('Project ID:', id);
+
+    fetch('project-data.json')
+      .then(res => res.json())
+      .then(data => {
+        const project = data[id];
+
+        if (!project) {
+          document.body.innerHTML = '<h1>Project not found</h1>';
+          return;
+        }
+
+        // Fill in project title & subtitle
+        document.querySelector('.project-title h1').textContent = project.title;
+        document.querySelector('.project-subtitle h2').textContent = project.subtitle;
+
+        // Update video (supports YouTube, Kickstarter, direct video, or image if .png)
+        const videoContainer = document.querySelector('.project-video');
+        videoContainer.innerHTML = ''; // Clear existing
+
+        let videoEl;
+        if (project.video) {
+          if (project.video.endsWith('.png')) {
+            videoEl = document.createElement('img');
+            videoEl.src = project.video;
+            videoEl.alt = 'Project Image';
+            videoEl.style.width = "70%";
+          } else if (project.video.includes('youtube.com') || project.video.includes('youtu.be')) {
+            const videoId = project.video.match(/(?:youtube\.com\/.*v=|youtu\.be\/)([^&]+)/)[1];
+            videoEl = document.createElement('iframe');
+            videoEl.width = "100%";
+            videoEl.height = "315";
+            videoEl.src = `https://www.youtube.com/embed/${videoId}`;
+            videoEl.frameBorder = "0";
+            videoEl.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            videoEl.allowFullscreen = true;
+          } else if (project.video.includes('kickstarter.com')) {
+            videoEl = document.createElement('iframe');
+            videoEl.width = "100%";
+            videoEl.height = "315";
+            videoEl.src = project.video;
+            videoEl.frameBorder = "0";
+            videoEl.allowFullscreen = true;
+          } else {
+            videoEl = document.createElement('video');
+            videoEl.width = "70%";
+            videoEl.controls = true;
+            videoEl.poster = "assets/project-poster.png";
+            const sourceEl = document.createElement('source');
+            sourceEl.src = project.video;
+            sourceEl.type = "video/mp4";
+            videoEl.appendChild(sourceEl);
+          }
+          videoContainer.appendChild(videoEl);
+
+          // Add buttons if links exist
+          if (Array.isArray(project.links)) {
+            const btnContainer = document.createElement('div');
+            btnContainer.style.display = 'flex';
+            btnContainer.style.justifyContent = 'center';
+            btnContainer.style.gap = '1rem';
+            btnContainer.className = 'project-links';
+            project.links.forEach(linkObj => {
+              const i = project.links.indexOf(linkObj);
+              const btn = document.createElement('a');
+              btn.href = linkObj;
+              console.log('Link:', linkObj);
+              btn.textContent = project['link-titles'][i];
+              btn.className = 'btn btn-primary';
+              btn.target = '_blank';
+              btn.rel = 'noopener noreferrer';
+              btnContainer.appendChild(btn);
+            });
+            videoContainer.appendChild(btnContainer);
+          }
+        }
+
+        // Update description
+        document.querySelector('.project-description p').textContent = project.description;
+
+        // Update images
+        const imagesContainer = document.querySelector('.images-grid');
+        imagesContainer.innerHTML = ''; // Clear existing
+        project.images.forEach(img => {
+          const imageEl = document.createElement('img');
+          imageEl.src = img;
+          imageEl.alt = 'Project Screenshot';
+          imagesContainer.appendChild(imageEl);
+        });
+
+      })
+      .catch(err => {
+        console.error('Error loading project data:', err);
+        document.body.innerHTML = '<h1>Failed to load project</h1>';
+      });
+  </script>
+
+  <!-- Body -->
+  <!-- Project title -->
+  <section class="project-title">
+    <h1> Project name </h1>
+  </section>
+  <section class="project-subtitle">
+    <h2> Project subtitle </h2>
+  </section>
+
+  <section class="project-details">
+    <div class="container project-flex">
+      <!-- Video on the left -->
+      <div class="project-video">
+        <!-- Video or embed will be injected here -->
+        <video width="70%" controls poster="assets/project-poster.png">
+          <source src="assets/project-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- Buttons will be injected here -->
+      </div>
+      <!-- Description on the right -->
+      <div class="project-description">
+        <h3>About</h3>
+        <p>
+          This is a brief description of the project. Explain the purpose, features, and technologies used. You can add
+          more details as needed to showcase your work.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Images in a container below -->
+  <div class="images-container project-images">
+    <h3>Screenshots</h3>
+    <div class="images-grid">
+      <img src="assets/project/project-one.png" alt="Screenshot 1" />
+      <img src="assets/project/project-one.png" alt="Screenshot 2" />
+      <img src="assets/project/project-one.png" alt="Screenshot 3" />
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      <a href="mailto:mathisduban@proton.me">mathisduban@proton.me</a>
+      <!-- Social links -->
+      <!-- Social links -->
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/mathis-duban-b15957236/"
+          target="_blank"
+          ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+        /></a>
+        <a href="https://github.com/Akkuun" target="_blank"
+          ><img src="./assets/github-icon.svg" alt="GitHub"
+        /></a>
+      </div>
+      <!-- Attribution -->
+      <p>&copy; Mathis Duban</p>
+      <p> Powered by CommunityPro <span id="datee"></span>, All rights reserved </span></p>
+      <a href="https://github.com/CommunityPro/portfolio-html" target="_blank" rel="noopener noreferrer">
+        <img src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
+          alt="attribution" width="150px" />
+      </a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -19,5 +19,6 @@
     "type": "shell",
     "command": "npm run lint",
     "runOn": "folderOpen"
-  }
+  },
+  "livePreview.defaultPreviewPath": "/src/index.html"
 }

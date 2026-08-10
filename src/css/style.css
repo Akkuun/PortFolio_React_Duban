@@ -14,8 +14,9 @@
   --bg-primary: #ffffff;
   --text-color: #222222;
   --text-color-two: #ffffff;
+  --text-color-three: #444444;
   --bg-secondary: #000000;
-  --card-background: #f4f4f4;
+  --card-background: #e7e6e6;
   --bg-secondary-two: #111111;
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -37,6 +38,7 @@
   --bg-primary: #000000;
   --text-color: #ffffff;
   --text-color-two: #222222;
+  --text-color-three: #333333;
   --bg-secondary: #ffffff;
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
@@ -331,4 +333,130 @@ body {
     border-radius: 5px;
     width: 80%;
   }
+}
+
+/* Project styles */
+
+.project-title {
+  padding-top: 70px;
+  /* padding-bottom: 100px;  */
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color-three);
+  font-style: italic;
+}
+
+.project-flex {
+  display: flex;
+  align-items: flex-start; /* aligns items at the top */
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 2rem;
+}
+
+.project-video {
+  width: 40%;
+  height: 250px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.project-description {
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.project-video,
+.project-description {
+  flex: 1 1 45%;
+}
+
+.project-video {
+  width: 30%;
+  height: 250px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.work-description {
+  margin: 2rem auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.project-details {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-images {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-images h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.images-container {
+  max-width: var(--width-medium);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.images-grid {
+  display: flex;
+  gap: 0.9rem;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.images-grid img {
+  flex: 0 0 auto; /* Prevent images from shrinking or growing */
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners */
+  display: block;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.project-images {
+  margin-top: -1rem;
+  width: 100%;
+}
+
+.project-video {
+  padding-top: 7%;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  transform: translateX(-15%);
 }
